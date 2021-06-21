@@ -1,308 +1,302 @@
 /* Table Content : Remove Row : Result : Too Few : Part 3 : Row not deleted when using primary key for DELETE statement. */
-" Check the Console for possible errors inside the primary key(s) of this table!" = " Check the Console for possible errors inside the primary key(s) of this table!";
+" Check the Console for possible errors inside the primary key(s) of this table!" = " Vui lòng kiểm tra bảng điều khiển để biết các lỗi có thể xảy ra bên trong (các) khóa chính của bảng này!";
 
 /* Table Content : Remove Row : Result : Too Many : Part 2 : Generic text */
-" Please check the Console and inform the Sequel Ace team!" = " Please check the Console and inform the Sequel Ace team!";
+" Please check the Console and inform the Sequel Ace team!" = " Vui lòng kiểm tra Bảng điều khiển và thông báo cho đội ngũ Sequel Ace!";
 
 /* Table Content : Remove Row : Result : Too Few : Part 2 : Generic help message */
-" Reload the table to be sure that the contents have not changed in the meantime." = " Reload the table to be sure that the contents have not changed in the meantime.";
+" Reload the table to be sure that the contents have not changed in the meantime." = " Vui lòng tải lại bảng để đảm bảo rằng nội dung không thay đổi trong thời gian chờ đợi.";
 
 /* Table Content : Remove Row : Result : Too Few : Part 3 : no primary key in table generic message */
-" You should also add a primary key to this table!" = " You should also add a primary key to this table!";
+" You should also add a primary key to this table!" = " Bạn cũng nên thêm khóa chính vào bảng này!";
 
 /* Query snippet shell command syntax and placeholder */
 "$(shell_command)" = "$(shell_command)";
 
 /* text showing how many rows are selected */
-"%@ %@ selected" = "%1$@ %2$@ selected";
+"%@ %@ selected" = "%1$@ %2$@ đã chọn";
 
 /* History item filtered by values label */
-"%@ (Filtered by %@)" = "%1$@ (Filtered by %2$@)";
+"%@ (Filtered by %@)" = "%1$@ (Được lọc bởi %2$@)";
 
 /* History item with page number label */
-"%@ (Page %lu)" = "%1$@ (Page %2$lu)";
+"%@ (Page %lu)" = "%1$@ (Trang %2$lu)";
 
 /* Content Filter Manager : Initial name of copied filter
  Initial favourite name after duplicating a previous favourite */
-"%@ Copy" = "%@ Copy";
+"%@ Copy" = "%@ Sao chép";
 
 /* text showing a single row a partially loaded result */
-"%@ row in partial load" = "%@ row in partial load";
+"%@ row in partial load" = "có %@ trong một phần kết quả lấy được";
 
 /* text showing a single row in the result */
-"%@ row in table" = "%@ row in table";
+"%@ row in table" = "có %@ hàng trong bảng";
 
 /* text showing how a single rows matched filter */
-"%@ row of %@%@ matches filter" = "%1$@ row of %2$@%3$@ matches filter";
+"%@ row of %@%@ matches filter" = "%1$@ hàng của %2$@%3$@ phù hợp với bộ lọc";
 
 /* text showing how many rows are in a partially loaded result */
-"%@ rows in partial load" = "%@ rows in partial load";
+"%@ rows in partial load" = "có %@ trong một phần kết quả lấy được";
 
 /* text showing how many rows are in the result */
-"%@ rows in table" = "%@ rows in table";
+"%@ rows in table" = "có %@ hàng trong bảng";
 
 /* text showing how many rows matched filter */
-"%@ rows of %@%@ match filter" = "%1$@ rows of %2$@%3$@ match filter";
+"%@ rows of %@%@ match filter" = "%1$@ hàng của %2$@%3$@ phù hợp với bộ lọc";
 
 /* text showing how many rows have been affected by a single query */
-"%@; %ld rows affected" = "%1$@; %2$ld rows affected";
+"%@; %ld rows affected" = "%1$@; %2$ld hàng đã bị ảnh hưởng";
 
 /* text showing how many rows have been affected by multiple queries */
-"%@; %ld rows affected in total, by %ld queries taking %@" = "%1$@; %2$ld rows affected in total, by %3$ld queries taking %4$@";
+"%@; %ld rows affected in total, by %ld queries taking %@" = "%1$@; %2$ld hàng đã bị ảnh hưởng bởi %3$ld try vấn chiếm %4$@";
 
 /* text showing one row has been affected by a single query */
-"%@; 1 row affected" = "%@; 1 row affected";
+"%@; 1 row affected" = "%@; 1 hàng đã bị ảnh hưởng";
 
 /* text showing one row has been affected by multiple queries */
-"%@; 1 row affected in total, by %ld queries taking %@" = "%1$@; 1 row affected in total, by %2$ld queries taking %3$@";
+"%@; 1 row affected in total, by %ld queries taking %@" = "%1$@; 1 hàng đã bị ảnh hưởng bởi %2$ld try vẫn chiếm %3$@";
 
 /* text showing a query was cancelled */
-"%@; Cancelled after %@" = "%1$@; Cancelled after %2$@";
+"%@; Cancelled after %@" = "%1$@; tốn %2$@ sau khi hủy";
 
 /* text showing multiple queries were cancelled */
-"%@; Cancelled in query %ld, after %@" = "%1$@; Cancelled in query %2$ld, after %3$@";
+"%@; Cancelled in query %ld, after %@" = "%1$@; đã hủy trong truy vấn %2$ld, sau %3$@";
 
 /* Error display text, showing original MySQL error */
-"%@\n\nMySQL said: %@" = "%1$@\n\nMySQL said: %2$@";
+"%@\n\nMySQL said: %@" = "%1$@\n\nThông báo của MySQL: %2$@";
 
 /* favorite singular label (%d == 1) */
-"%lu favorite" = "%lu favorite";
+"%lu favorite" = "%lu ưa thích";
 
 /* favorites plural label (%d != 1) */
-"%lu favorites" = "%lu favorites";
+"%lu favorites" = "%lu ưa thích";
 
 /* favorite group singular label (%d == 1) */
-"%lu group" = "%lu group";
+"%lu group" = "%lu nhóm";
 
 /* favorite groups plural label (%d != 1) */
-"%lu groups" = "%lu groups";
+"%lu groups" = "%lu nhóm";
 
 /* Table Content : Remove Row : Result : Too Many : Part 1 : n+y (y!=1) rows instead of n selected were deleted. */
-"%ld additional rows were removed!" = "%ld additional rows were removed!";
+"%ld additional rows were removed!" = "%ld hàng bổ sung đã bị xóa";
 
 /* Label showing the index of the selected CSV row */
-"%ld of %lu record(s)" = "%1$ld of %2$lu record(s)";
+"%ld of %lu record(s)" = "%1$ld của %2$lu bản ghi";
 
 /* Label showing the index of the selected CSV row (csv partially loaded) */
-"%ld of first %lu record(s)" = "%1$ld of first %2$lu record(s)";
+"%ld of first %lu record(s)" = "%1$ld của %2$lu bản ghi đầu tiên";
 
 /* Table Content : Remove Row : Result : Too Few : Part 1 : n-x (x!=1) of n selected rows were deleted. */
-"%ld rows were not removed." = "%ld rows were not removed.";
+"%ld rows were not removed." = "%ld hàng đã không bị xóa";
 
 /* Export file already exists message */
-"%lu files already exist. Do you want to replace them?" = "%lu files already exist. Do you want to replace them?";
+"%lu files already exist. Do you want to replace them?" = "%lu tệp tin đã tồn tại. Bạn có muốn thay thế chúng không?";
 
 /* Export files creation error title */
-"%lu files could not be created" = "%lu files could not be created";
+"%lu files could not be created" = "%lu tệp tin đã không thể tạo được tệp tin";
 
 /* Some export files already exist explanatory text */
-"%lu files with the same names already exist in the target folder. Replacing them will overwrite their current contents." = "%lu files with the same names already exist in the target folder. Replacing them will overwrite their current contents.";
+"%lu files with the same names already exist in the target folder. Replacing them will overwrite their current contents." = "Các tệp tin %lu cùng tên đã tồn tại trong thư mục đích. Thao tác tiếp tục sẽ ghi đè lên nội dung hiện tại của chúng.";
 
 /* filtered item count */
-"%lu of %lu" = "%1$lu of %2$lu";
+"%lu of %lu" = "%1$lu của %2$lu";
 
 /* Export folder not writable for some files explanatory text */
-"%lu of the export files could not be created because their target export folder is not writable; please select a new export location and try again." = "%lu of the export files could not be created because their target export folder is not writable; please select a new export location and try again.";
+"%lu of the export files could not be created because their target export folder is not writable; please select a new export location and try again." = "%lu của các tệp tin xuất ra không thể xuất vì thư mục xuất đích của chúng không thể ghi được; vui lòng chọn một vị trí xuất khác và thử lại.";
 
 /* Export folder missing for some files explanatory text */
-"%lu of the export files could not be created because their target export folder no longer exists; please select a new export location and try again." = "%lu of the export files could not be created because their target export folder no longer exists; please select a new export location and try again.";
+"%lu of the export files could not be created because their target export folder no longer exists; please select a new export location and try again." = "%lu của các tệp tin xuất ra không thể được tạo bởi vì thư mục đích không còn tồn tại; vui lòng chọn một vị trí mới và thử lại.";
 
 /* History item title with nothing selected */
-"(no selection)" = "(no selection)";
+"(no selection)" = "(không có lựa chọn)";
 
 /* value shown for hidden blob and text fields */
-"(not loaded)" = "(not loaded)";
+"(not loaded)" = "(chưa được tải)";
 
 /* Explanation for MySQL server has gone away error */
-"(This usually indicates that the connection has been closed by the server after inactivity, but can also occur due to other conditions.  The connection has been restored; please try again if the query is safe to re-run.)" = "(This usually indicates that the connection has been closed by the server after inactivity, but can also occur due to other conditions.  The connection has been restored; please try again if the query is safe to re-run.)";
+"(This usually indicates that the connection has been closed by the server after inactivity, but can also occur due to other conditions.  The connection has been restored; please try again if the query is safe to re-run.)" = "(Điều này thường chỉ thị máy chủ đã đóng kết nối do không hoạt động, nhưng cũng có thể do các lý do khác.  Kết nối đã được khôi phục; vui lòng thử lại nếu truy vấn là an toàn.)";
 
 /* Custom Query : text appended to the “x row(s) affected” messages. $1 is a time interval */
-", first row available after %1$@" = ", first row available after %1$@";
+", first row available after %1$@" = ", hàng đầu tiên khả dụng sau %1$@";
 
 /* Custom Query : text appended to the “x row(s) affected” messages (for update/delete queries). $1 is a time interval */
-", taking %1$@" = ", taking %1$@";
+", taking %1$@" = ", chiếm %1$@";
 
 /* warning shown in the console when no rows have been affected after writing to the db */
-"/* WARNING: No rows have been affected */\n" = "/* WARNING: No rows have been affected */\n";
+"/* WARNING: No rows have been affected */\n" = "/* CẢNH BÁO: Đã không có hàng nào chịu ảnh hưởng */\n";
 
 /* error text when multiple custom query failed */
-"[ERROR in query %ld] %@\n" = "[ERROR in query %1$ld] %2$@\n";
+"[ERROR in query %ld] %@\n" = "[LỖI trong truy vấn %1$ld] %2$@\n";
 
 /* error text when reading of csv file gave errors */
-"[ERROR in row %ld] %@\n" = "[ERROR in row %1$ld] %2$@\n";
+"[ERROR in row %ld] %@\n" = "[LỖI tại hàng %1$ld] %2$@\n";
 
 /* [multiple selection] */
-"[multiple selection]" = "[multiple selection]";
+"[multiple selection]" = "[chọn cùng lúc nhiều]";
 
 /* displayed when new content filter has empty Name field (ContentFilterManager) */
-"[name required]" = "[name required]";
+"[name required]" = "[tên bắt buộc]";
 
 /* [no selection] */
-"[no selection]" = "[no selection]";
+"[no selection]" = "[không có lựa chọn]";
 
 /* Additional export file errors */
-"\n\n(In addition, one or more errors occurred while attempting to create the export files: %lu could not be created. These files will be ignored.)" = "\n\n(In addition, one or more errors occurred while attempting to create the export files: %lu could not be created. These files will be ignored.)";
+"\n\n(In addition, one or more errors occurred while attempting to create the export files: %lu could not be created. These files will be ignored.)" = "\n\n(Thêm vào đó, có một vài lỗi đã xảy ra khi cố gắng xuất tệp tin: không thể tạo được %lu. Các tệp này sẽ bị từ chối.)";
 
 /* \n\npress shift for binary search tooltip message */
-"\n\nPress ⇧ for binary search (case-sensitive)." = "\n\nPress ⇧ for binary search (case-sensitive).";
+"\n\nPress ⇧ for binary search (case-sensitive)." = "\n\nNhấn ⇧ để tìm kiếm nhị phân (phân biệt hoa thường).";
 
 /* description of bit */
-"A bit-field type. M specifies the number of bits. If shorter values are inserted, they will be aligned on the least significant bit. See the SET type if you want to explicitly name each bit." = "A bit-field type. M specifies the number of bits. If shorter values are inserted, they will be aligned on the least significant bit. See the SET type if you want to explicitly name each bit.";
+"A bit-field type. M specifies the number of bits. If shorter values are inserted, they will be aligned on the least significant bit. See the SET type if you want to explicitly name each bit." = "Một loại bit-field. M chỉ định số chữ số của bit. Nếu chèn vào giá trị có số chữ số ngắn hơn, nó sẽ được căn đến chữ số cuối cùng. Tham khảo các loại SET nếu bạn muốn đặt tên riêng biệt cho từng bit.";
 
 /* Open Files : Bundle : Already-Installed : 'Update Bundle' question dialog message */
-"A Bundle ‘%@’ is already installed. Do you want to update it?" = "A Bundle ‘%@’ is already installed. Do you want to update it?";
+"A Bundle ‘%@’ is already installed. Do you want to update it?" = "Gói ‘%@’ đã được cài đặt. Bạn có muốn cập nhật nó không?";
 
 /* description of binary */
-"A byte array with fixed length. Shorter values will always be padded to the right with 0x00 until they fit M." = "A byte array with fixed length. Shorter values will always be padded to the right with 0x00 until they fit M.";
+"A byte array with fixed length. Shorter values will always be padded to the right with 0x00 until they fit M." = "Một mảng kiểu byte có độ dài cố định. Các giá trị ngắn hơn sẽ luôn được đệm ở bên phải với 0x00 cho đến khi chúng phù hợp với M.";
 
 /* description of varbinary */
-"A byte array with variable length. The actual number of bytes is further limited by the values of other fields in the row." = "A byte array with variable length. The actual number of bytes is further limited by the values of other fields in the row.";
+"A byte array with variable length. The actual number of bytes is further limited by the values of other fields in the row." = "Một mảng kiểu byte có độ dài không cố định. Số byte thực tế cũng bị giới hạn bởi giá trị của các trường khác trong hàng.";
 
 /* description of blob
  description of longblob
  description of mediumblob
  description of tinyblob */
-"A byte array with variable length. Unlike VARBINARY this type does not count towards the maximum row length." = "A byte array with variable length. Unlike VARBINARY this type does not count towards the maximum row length.";
+"A byte array with variable length. Unlike VARBINARY this type does not count towards the maximum row length." = "Một mảng kiểu byte có độ dài không cố định. Không giống như VARBINARY, kiểu này không tính độ dài hàng tối đa.";
 
 /* description of tinytext */
-"A character string that can store up to 255 bytes, but requires less space for shorter values. The actual number of characters is further limited by the used encoding. Unlike VARCHAR this type does not count towards the maximum row length." = "A character string that can store up to 255 bytes, but requires less space for shorter values. The actual number of characters is further limited by the used encoding. Unlike VARCHAR this type does not count towards the maximum row length.";
+"A character string that can store up to 255 bytes, but requires less space for shorter values. The actual number of characters is further limited by the used encoding. Unlike VARCHAR this type does not count towards the maximum row length." = "Một chuỗi ký tự có thể lưu tới 255 bytes, nhưng nó sẽ cần ít không gian hơn cho giá trị ngắn hơn. Số lượng ký tự thực tế cũng bị giới hạn bởi việc sử dụng mã hóa văn bản. Không giống như VARCHAR, loại này không được tính vào độ dài hàng tối đa.";
 
 /* description of varchar */
-"A character string that can store up to M bytes, but requires less space for shorter values. The actual number of characters is further limited by the used encoding and the values of other fields in the row." = "A character string that can store up to M bytes, but requires less space for shorter values. The actual number of characters is further limited by the used encoding and the values of other fields in the row.";
+"A character string that can store up to M bytes, but requires less space for shorter values. The actual number of characters is further limited by the used encoding and the values of other fields in the row." = "Một chuỗi ký tự có thể lưu trữ tối đa M byte, nhưng nó sẽ cần ít không gian hơn cho giá trị ngắn hơn. Số ký tự thực tế cũng bị giới hạn bởi mã hóa văn bản và giá trị của các trường khác trong hàng. ";
 
 /* description of text */
-"A character string that can store up to M bytes, but requires less space for shorter values. The actual number of characters is further limited by the used encoding. Unlike VARCHAR this type does not count towards the maximum row length." = "A character string that can store up to M bytes, but requires less space for shorter values. The actual number of characters is further limited by the used encoding. Unlike VARCHAR this type does not count towards the maximum row length.";
+"A character string that can store up to M bytes, but requires less space for shorter values. The actual number of characters is further limited by the used encoding. Unlike VARCHAR this type does not count towards the maximum row length." = "Một chuỗi ký tự có thể lưu trữ tới M byte, nhưng yêu cầu ít không gian hơn cho các giá trị ngắn hơn. Số lượng ký tự thực tế được giới hạn thêm bởi mã hóa đã sử dụng. Không giống như loại VARCHAR, loại này không được tính vào chiều dài tối đa của hàng.";
 
 /* description of char */
-"A character string that will require M×w bytes per row, independent of the actual content length. w is the maximum number of bytes a single character can occupy in the given encoding." = "A character string that will require M×w bytes per row, independent of the actual content length. w is the maximum number of bytes a single character can occupy in the given encoding.";
+"A character string that will require M×w bytes per row, independent of the actual content length. w is the maximum number of bytes a single character can occupy in the given encoding." = "Một chuỗi ký tự sẽ yêu cầu M×w byte mỗi hàng, độc lập với độ dài nội dung thực tế. W là số byte tối đa một ký tự duy nhất có thể chiếm trong mã hóa đã cho.";
 
 /* description of longtext
  description of mediumtext */
-"A character string with variable length. The actual number of characters is further limited by the used encoding. Unlike VARCHAR this type does not count towards the maximum row length." = "A character string with variable length. The actual number of characters is further limited by the used encoding. Unlike VARCHAR this type does not count towards the maximum row length.";
+"A character string with variable length. The actual number of characters is further limited by the used encoding. Unlike VARCHAR this type does not count towards the maximum row length." = "Một chuỗi ký tự có độ dài thay đổi. Số lượng ký tự thực tế được giới hạn thêm bởi mã hóa đã sử dụng. Không giống như loại VARCHAR loại này không được tính vào chiều dài hàng tối đa.";
 
 /* description of json */
-"A data type that validates JSON data on INSERT and internally stores it in a binary format that is both, more compact and faster to access than textual JSON.\nAvailable from MySQL 5.7.8." = "A data type that validates JSON data on INSERT and internally stores it in a binary format that is both, more compact and faster to access than textual JSON.\nAvailable from MySQL 5.7.8.";
+"A data type that validates JSON data on INSERT and internally stores it in a binary format that is both, more compact and faster to access than textual JSON.\nAvailable from MySQL 5.7.8." = "Một loại dữ liệu mà xác thực dữ liệu JSON khi INSERT và lưu trữ nội bộ nó ở định dạng nhị phân cả hai, nhỏ gọn hơn và nhanh hơn để truy cập so với JSON văn bản. \nKhả dụng từ MySQL 5.7.8.";
 
 /* Export file already exists explanatory text */
-"A file with the same name already exists in the target folder. Replacing it will overwrite its current contents." = "A file with the same name already exists in the target folder. Replacing it will overwrite its current contents.";
+"A file with the same name already exists in the target folder. Replacing it will overwrite its current contents." = "Một tệp có cùng tên đã tồn tại trong thư mục đích. tiệc Thay thế sẽ ghi đè lên nội dung hiện tại của nó.";
 
 /* description of decimal */
-"A fixed-point, exact decimal value. M is the maxium number of digits, of which D may be after the decimal point. When rounding, 0-4 is always rounded down, 5-9 up (“round towards nearest”)." = "A fixed-point, exact decimal value. M is the maxium number of digits, of which D may be after the decimal point. When rounding, 0-4 is always rounded down, 5-9 up (“round towards nearest”).";
+"A fixed-point, exact decimal value. M is the maxium number of digits, of which D may be after the decimal point. When rounding, 0-4 is always rounded down, 5-9 up (“round towards nearest”)." = "Một điểm cố định, giá trị thập phân chính xác. M là số chữ số tối đa, trong đó D có thể là sau dấu thập phân. Khi làm tròn, 0-4 luôn được làm tròn xuống, 5-9 lên (“vòng về phía gần nhất”). ";
 
 /* table structure : indexes : delete index : error 1553 : title
  table structure : indexes : delete index : error 1553, no FK found : title */
-"A foreign key needs this index" = "A foreign key needs this index";
+"A foreign key needs this index" = "Một khóa ngoại cần chỉ số này";
 
 /* description of set */
-"A SET can define up to 64 members (as strings) of which a field can use one or more using a comma-separated list. Upon insertion the order of members is automatically normalized and duplicate members will be eliminated. Assignment of numbers is supported using the same semantics as for BIT types." = "A SET can define up to 64 members (as strings) of which a field can use one or more using a comma-separated list. Upon insertion the order of members is automatically normalized and duplicate members will be eliminated. Assignment of numbers is supported using the same semantics as for BIT types.";
+"A SET can define up to 64 members (as strings) of which a field can use one or more using a comma-separated list. Upon insertion the order of members is automatically normalized and duplicate members will be eliminated. Assignment of numbers is supported using the same semantics as for BIT types." = "Một SET có thể xác định tối đa 64 thành viên (dưới dạng chuỗi) trong đó một trường có thể sử dụng một hoặc nhiều việc sử dụng danh sách được phân tách bằng dấu phẩy.Khi chèn, thứ tự các thành viên được tự động chuẩn hóa và các thành viên trùng lặp sẽ được loại bỏ.Phân công số được hỗ trợ bằng cách sử dụng cùng một ngữ nghĩa đối với các loại bit. ";
 
 /* SSH key not found message */
-"A SSH key location was specified, but no file was found in the specified location.  Please re-select the key and try again." = "A SSH key location was specified, but no file was found in the specified location.  Please re-select the key and try again.";
+"A SSH key location was specified, but no file was found in the specified location.  Please re-select the key and try again." ="Vị  SSH key đã được chỉ định, nhưng không tìm thấy tệp nào ở vị trí đó. Vui lòng chọn lại key và thử lại.";
 
 /* SSL CA certificate file not found message */
-"A SSL Certificate Authority certificate location was specified, but no file was found in the specified location.  Please re-select the Certificate Authority certificate and try again." = "A SSL Certificate Authority certificate location was specified, but no file was found in the specified location.  Please re-select the Certificate Authority certificate and try again.";
+"A SSL Certificate Authority certificate location was specified, but no file was found in the specified location.  Please re-select the Certificate Authority certificate and try again." = "Vị trí SSL Certificate Authority certificate đã được chỉ định, nhưng không tìm thấy tệp nào ở vị trí đó. Vui lòng chọn lại Certificate Authority certificate và thử lại.";
 
 /* SSL certificate file not found message */
-"A SSL certificate location was specified, but no file was found in the specified location.  Please re-select the certificate and try again." = "A SSL certificate location was specified, but no file was found in the specified location.  Please re-select the certificate and try again.";
+"A SSL certificate location was specified, but no file was found in the specified location.  Please re-select the certificate and try again." = "Vị trí chứng chỉ SSL đã được chỉ định, nhưng không tìm thấy tệp nào ở vị trí đó. Vui lòng chọn lại chứng chỉ và thử lại. ";
 
 /* SSL key file not found message */
-"A SSL key file location was specified, but no file was found in the specified location.  Please re-select the key file and try again." = "A SSL key file location was specified, but no file was found in the specified location.  Please re-select the key file and try again.";
+"A SSL key file location was specified, but no file was found in the specified location.  Please re-select the key file and try again." = "Vị trí SSL key đã được chỉ định, nhưng không tìm thấy tệp nào ở vị trí đó. Vui lòng chọn lại tệp key và thử lại.";
 
 /* duplicate host informative message */
-"A user with the host '%@' already exists" = "A user with the host '%@' already exists";
+"A user with the host '%@' already exists" = "Người dùng với máy chủ '%@' đã tồn tại";
 
 /* duplicate user informative message */
-"A user with the name '%@' already exists" = "A user with the name '%@' already exists";
+"A user with the name '%@' already exists" = "Người dùng với tên '%@' đã tồn tại";
 
 /* table content : editing : error message description when parsing as hex string failed */
 "A valid hex string may only contain the numbers 0-9 and letters A-F (a-f). It can optionally begin with „0x“ and spaces will be ignored.\nAlternatively the syntax X'val' is supported, too." = "A valid hex string may only contain the numbers 0-9 and letters A-F (a-f). It can optionally begin with „0x“ and spaces will be ignored.\nAlternatively the syntax X'val' is supported, too.";
 
 /* connection failed due to access denied title */
-"Access denied!" = "Access denied!";
+"Access denied!" = "Truy cập bị từ chối!";
 
 /* range of double */
-"Accurate to approx. 15 decimal places" = "Accurate to approx. 15 decimal places";
+"Accurate to approx. 15 decimal places" = "Chính xác đến khoảng. 15 chữ số thập phân";
 
 /* range of float */
-"Accurate to approx. 7 decimal places" = "Accurate to approx. 7 decimal places";
+"Accurate to approx. 7 decimal places" = "Chính xác đến khoảng. 7 chữ số thập phân";
 
 /* active connection window is busy. please wait and try again. tooltip */
-"Active connection window is busy. Please wait and try again." = "Active connection window is busy. Please wait and try again.";
-
+"Active connection window is busy. Please wait and try again." = "Cửa sổ kết nối hoạt động đang bận. Xin vui lòng chờ và thử lại. ";
 /* header for activities pane */
-"ACTIVITIES" = "ACTIVITIES";
+"ACTIVITIES" = "HOẠT ĐỘNG";
 
 /* Add trigger button label */
-"Add" = "Add";
+"Add" = "Thêm";
 
 /* menu item to add db */
-"Add Database..." = "Add Database...";
+"Add Database..." = "Thêm Cơ Sở Dữ Liệu...";
 
 /* Add Host */
-"Add Host" = "Add Host";
+"Add Host" = "Thêm Máy Chủ";
 
 /* add global value or expression menu item */
-"Add Value or Expression…" = "Add Value or Expression…";
+"Add Value or Expression…" = "Thêm Giá Trị hoặc Biểu Thức ...";
 
 /* adding index task status message */
-"Adding index..." = "Adding index...";
+"Adding index..." = "Thêm chỉ mục ...";
 
 /* Advanced options short title */
-"Advanced" = "Advanced";
+"Advanced" = "Nâng cao";
 
 /* notifications preference pane name */
-"Alerts & Logs" = "Alerts & Logs";
+"Alerts & Logs" = "Cảnh báo & Nhật ký";
 
 /* notifications preference pane tooltip */
-"Alerts & Logs Preferences" = "Alerts & Logs Preferences";
+"Alerts & Logs Preferences" = "Cảnh báo & Tùy chọn nhật ký";
 
 /* All databases placeholder */
-"All Databases" = "All Databases";
+"All Databases" = "Tất cả các cơ sở dữ liệu";
 
 /* All databases (%) placeholder */
-"All Databases (%)" = "All Databases (%)";
+"All Databases (%)" = "Tất cả các cơ sở dữ liệu (%)";
 
 /* All export files already exist message */
-"All the export files already exist. Do you want to replace them?" = "All the export files already exist. Do you want to replace them?";
-
+"All the export files already exist. Do you want to replace them?" = "Tất cả các tập tin muốn xuất đã tồn tại. Bạn có muốn thay thế chúng không?";
 /* An error for sequelace URL scheme command occurred. Probably no corresponding connection window found. */
-"An error for sequelace URL scheme command occurred. Probably no corresponding connection window found." = "An error for sequelace URL scheme command occurred. Probably no corresponding connection window found.";
+"An error for sequelace URL scheme command occurred. Probably no corresponding connection window found." ="Một lỗi cho lệnh Scheme URL tuần tự xảy ra. Có lẽ không tìm thấy cửa sổ kết nối tương ứng.";
 
 /* no connection available informatie message */
-"An error has occurred and there doesn't seem to be a connection available." = "An error has occurred and there doesn't seem to be a connection available.";
+"An error has occurred and there doesn't seem to be a connection available." = "Đã xảy ra lỗi và dường như không có sẵn kết nối.";
 
 /* an error occur while executing a scheme command. if the scheme command was invoked by a bundle command, it could be that the command still runs. you can try to terminate it by pressing ⌘+. or via the activities pane. */
-"An error occur while executing a scheme command. If the scheme command was invoked by a Bundle command, it could be that the command still runs. You can try to terminate it by pressing ⌘+. or via the Activities pane." = "An error occur while executing a scheme command. If the scheme command was invoked by a Bundle command, it could be that the command still runs. You can try to terminate it by pressing ⌘+. or via the Activities pane.";
+"An error occur while executing a scheme command. If the scheme command was invoked by a Bundle command, it could be that the command still runs. You can try to terminate it by pressing ⌘+. or via the Activities pane." ="Đã xảy ra lỗi trong khi thực hiện lệnh SCHEME. Nếu lệnh SCHEME được gọi bằng lệnh Bundle, có thể là lệnh vẫn chạy. Bạn có thể thử chấm dứt nó bằng cách nhấn ⌘+. hoặc thông qua khung Hoạt Động.";
+/* error killing query informative message */
+"An error occurred while attempting to kill connection %lld.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng tiêu diệt kết nối %1$lld.\n\nMySQL cho biết: %2$@";
 
 /* error killing query informative message */
-"An error occurred while attempting to kill connection %lld.\n\nMySQL said: %@" = "An error occurred while attempting to kill connection %1$lld.\n\nMySQL said: %2$@";
-
-/* error killing query informative message */
-"An error occurred while attempting to kill the query associated with connection %lld.\n\nMySQL said: %@" = "An error occurred while attempting to kill the query associated with connection %1$lld.\n\nMySQL said: %2$@";
+"An error occurred while attempting to kill the query associated with connection %lld.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng tiêu diệt truy vấn được liên kết với kết nối %1$lld.\n\nMySQL cho biết: %2$@";
 
 /* Error shown when unable to show create table syntax */
-"An error occurred while creating table syntax.\n\n: %@" = "An error occurred while creating table syntax.\n\n: %@";
-
+"An error occurred while creating table syntax.\n\n: %@" = "Đã xảy ra lỗi trong khi tạo cú pháp bảng. \n\n: %@";
 /* rename table error - no temporary name found */
-"An error occurred while renaming '%@'. No temporary name could be found. Please try renaming to something else first." = "An error occurred while renaming '%@'. No temporary name could be found. Please try renaming to something else first.";
+"An error occurred while renaming '%@'. No temporary name could be found. Please try renaming to something else first." = "Đã xảy ra lỗi trong khi đổi tên '%@'. Không có tên tạm thời có thể được tìm thấy. Vui lòng thử đổi tên thành một cái gì đó khác trước.";
 
 /* rename table error informative message */
-"An error occurred while renaming '%@'.\n\nMySQL said: %@" = "An error occurred while renaming '%1$@'.\n\nMySQL said: %2$@";
-
+"An error occurred while renaming '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi đổi tên '%1$@'.\n\nMySQL cho biết: %2$@";
 /* rename error - don't know what type the renamed thing is */
-"An error occurred while renaming. '%@' is of an unknown type." = "An error occurred while renaming. '%@' is of an unknown type.";
-
+"An error occurred while renaming. '%@' is of an unknown type." = "Đã xảy ra lỗi trong khi đổi tên. '%@' Là một loại không xác định.";
 /* rename precedure/function error - can't delete old procedure */
-"An error occurred while renaming. I couldn't delete '%@'.\n\nMySQL said: %@" = "An error occurred while renaming. I couldn't delete '%1$@'.\n\nMySQL said: %2$@";
+"An error occurred while renaming. I couldn't delete '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi đổi tên. Tôi không thể xóa '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* rename precedure/function error - can't recreate procedure */
-"An error occurred while renaming. I couldn't recreate '%@'.\n\nMySQL said: %@" = "An error occurred while renaming. I couldn't recreate '%1$@'.\n\nMySQL said: %2$@";
+"An error occurred while renaming. I couldn't recreate '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi đổi tên. Tôi không thể tạo lại '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* rename precedure/function error - can't retrieve syntax */
-"An error occurred while renaming. I couldn't retrieve the syntax for '%@'.\n\nMySQL said: %@" = "An error occurred while renaming. I couldn't retrieve the syntax for '%1$@'.\n\nMySQL said: %2$@";
+"An error occurred while renaming. I couldn't retrieve the syntax for '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi đổi tên. Tôi không thể truy xuất cú pháp cho '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* rename error - invalid create syntax */
-"An error occurred while renaming. The CREATE syntax of '%@' could not be parsed." = "An error occurred while renaming. The CREATE syntax of '%@' could not be parsed.";
+"An error occurred while renaming. The CREATE syntax of '%@' could not be parsed." = "Đã xảy ra lỗi trong khi đổi tên. Cú pháp CREATE '%@' không thể được parse.";
 
 /* message of panel when retrieving view information failed */
 "An error occurred while retrieving status data.\n\nMySQL said: %@" = "An error occurred while retrieving status data.\n\nMySQL said: %@";
