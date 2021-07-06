@@ -299,247 +299,246 @@
 "An error occurred while renaming. The CREATE syntax of '%@' could not be parsed." = "Đã xảy ra lỗi trong khi đổi tên. Cú pháp CREATE '%@' không thể được parse.";
 
 /* message of panel when retrieving view information failed */
-"An error occurred while retrieving status data.\n\nMySQL said: %@" = "An error occurred while retrieving status data.\n\nMySQL said: %@";
+"An error occurred while retrieving status data.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi truy xuất dữ liệu trạng thái. \n\nMySQL cho biết: %@";
 
 /* message of panel when create syntax cannot be retrieved */
-"An error occurred while retrieving the create syntax for '%@'.\nMySQL said: %@" = "An error occurred while retrieving the create syntax for '%1$@'.\nMySQL said: %2$@";
+"An error occurred while retrieving the create syntax for '%@'.\nMySQL said: %@" = "Đã xảy ra lỗi trong khi truy xuất tạo cú pháp cho '%1$@'.\nMySQL cho biết: %2$@";
 
 /* add index error informative message */
-"An error occurred while trying to add the index.\n\nMySQL said: %@" = "An error occurred while trying to add the index.\n\nMySQL said: %@";
+"An error occurred while trying to add the index.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng thêm chỉ mục. \n\nMySQL cho biết: %@";
 
 /* error adding password to keychain informative message */
-"An error occurred while trying to add the password to your Keychain. Repairing your Keychain might resolve this, but if it doesn't please report it to the Sequel Ace team, supplying the error code %i." = "An error occurred while trying to add the password to your Keychain. Repairing your Keychain might resolve this, but if it doesn't please report it to the Sequel Ace team, supplying the error code %i.";
+"An error occurred while trying to add the password to your Keychain. Repairing your Keychain might resolve this, but if it doesn't please report it to the Sequel Ace team, supplying the error code %i." = "Đã xảy ra lỗi trong khi cố gắng thêm mật khẩu vào Keychain của bạn. Sửa chữa Keychain của bạn có thể giải quyết vấn đề này, nhưng nếu không sửa được vui lòng báo cáo cho đội ngũ Sequel Ace, cung cấp mã lỗi %i.";
 
 /* unable to copy database message informative message */
-"An error occurred while trying to copy the database '%@' to '%@'." = "An error occurred while trying to copy the database '%1$@' to '%2$@'.";
+"An error occurred while trying to copy the database '%@' to '%@'." = "Đã xảy ra lỗi trong khi cố gắng sao chép cơ sở dữ liệu '%1$@' đến '%2$@'.";
 
 /* error deleting index informative message */
-"An error occurred while trying to delete the index.\n\nMySQL said: %@" = "An error occurred while trying to delete the index.\n\nMySQL said: %@";
+"An error occurred while trying to delete the index.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng xóa chỉ mục.\n\nMySQL cho biết:% @";
 
 /* table status : row count query failed : error message */
-"An error occurred while trying to determine the number of rows for %@.\nMySQL said: %@ (%lu)" = "An error occurred while trying to determine the number of rows for “%1$@”.\nMySQL said: %2$@ (%3$lu)";
+"An error occurred while trying to determine the number of rows for %@.\nMySQL said: %@ (%lu)" = "Đã xảy ra lỗi trong khi cố gắng xác định số lượng hàng cho “%1$@”.\nMySQL cho biết: %2$@ (%3$lu)";
 
 /* unable to rename database message informative message */
-"An error occurred while trying to rename the database '%@' to '%@'." = "An error occurred while trying to rename the database '%1$@' to '%2$@'.";
+"An error occurred while trying to rename the database '%@' to '%@'." = "Một lỗi xảy ra trong khi cố gắng đổi tên cơ sở dữ liệu từ '%1$@' sang '%2$@'.";
 
 /* error finding keychain item to edit informative message */
-"An error occurred while trying to retrieve the Keychain item you're trying to edit. Repairing your Keychain might resolve this, but if it doesn't please report it to the Sequel Ace team, supplying the error code %i." = "An error occurred while trying to retrieve the Keychain item you're trying to edit. Repairing your Keychain might resolve this, but if it doesn't please report it to the Sequel Ace team, supplying the error code %i.";
+"An error occurred while trying to retrieve the Keychain item you're trying to edit. Repairing your Keychain might resolve this, but if it doesn't please report it to the Sequel Ace team, supplying the error code %i." = "Đã xảy ra lỗi trong khi cố gắng lấy lại mục Keychain bạn đang cố gắng chỉnh sửa. Sửa chữa Keychain của bạn có thể giải quyết vấn đề này, nhưng nếu vẫn không được vui lòng báo cáo cho Sequel Ace team, cung cấp mã lỗi %i.";
 
 /* error updating keychain item informative message */
-"An error occurred while trying to update the Keychain item. Repairing your Keychain might resolve this, but if it doesn't please report it to the Sequel Ace team, supplying the error code %i." = "An error occurred while trying to update the Keychain item. Repairing your Keychain might resolve this, but if it doesn't please report it to the Sequel Ace team, supplying the error code %i.";
+"An error occurred while trying to update the Keychain item. Repairing your Keychain might resolve this, but if it doesn't please report it to the Sequel Ace team, supplying the error code %i." = "Đã xảy ra lỗi khi cố gắng cập nhật vật phẩm Keychain. Sửa chữa Keychain của bạn có thể giải quyết vấn đề này, nhưng nếu nó không vui lòng báo cáo cho Sequel Ace team, cung cấp mã lỗi %i.";
 
 /* mysql error occurred message */
-"An error occurred" = "An error occurred";
+"An error occurred" = "Đã xảy ra lỗi";
 
 /* MySQL table info retrieval error message */
-"An error occurred retrieving table information.  MySQL said: %@" = "An error occurred retrieving table information.  MySQL said: %@";
+"An error occurred retrieving table information.  MySQL said: %@" = "Đã xảy ra lỗi Lấy thông tin bảng. MySQL cho biế: %@";
 
 /* SQL encoding read error */
-"An error occurred when reading the file, as it could not be read in the encoding you selected (%@).\n\nOnly %ld queries were executed." = "An error occurred when reading the file, as it could not be read in the encoding you selected (%1$@).\n\nOnly %2$ld queries were executed.";
+"An error occurred when reading the file, as it could not be read in the encoding you selected (%@).\n\nOnly %ld queries were executed." = "Đã xảy ra lỗi khi đọc tệp tin, vì không thể đọc được trong quá trình mã hóa bạn đã chọn (%1$@).\n\nCác truy vấn không phải %2$ld đã được thực thi.";
 
 /* CSV encoding read error */
-"An error occurred when reading the file, as it could not be read using the encoding you selected (%@).\n\nOnly %ld rows were imported." = "An error occurred when reading the file, as it could not be read using the encoding you selected (%1$@).\n\nOnly %2$ld rows were imported.";
+"An error occurred when reading the file, as it could not be read using the encoding you selected (%@).\n\nOnly %ld rows were imported." = "Lỗi xảy ra khi đọc tệp, vì nó không thể đọc bằng cách sử dụng mã hóa bạn đã chọn (%1$@).\n\nChỉ có %2$ld đã được nhập.";
 
 /* SQL read error, including detail from system */
-"An error occurred when reading the file.\n\nOnly %ld queries were executed.\n\n(%@)" = "An error occurred when reading the file.\n\nOnly %1$ld queries were executed.\n\n(%2$@)";
+"An error occurred when reading the file.\n\nOnly %ld queries were executed.\n\n(%@)" = "Đã xảy ra lỗi khi đọc tệp.\n\nChỉ có %1$ld truy vấn đã được thực thi.\n\n(%2$@) ";
 
 /* CSV read error, including detail string from system */
-"An error occurred when reading the file.\n\nOnly %ld rows were imported.\n\n(%@)" = "An error occurred when reading the file.\n\nOnly %1$ld rows were imported.\n\n(%2$@)";
+"An error occurred when reading the file.\n\nOnly %ld rows were imported.\n\n(%@)" = "Đã xảy ra lỗi khi đọc tệp.\n\nChỉ có %1$ld hàng đã được nhập.\n\n(%2$@)";
 
 /* error adding field informative message */
-"An error occurred when trying to add the field '%@' via\n\n%@\n\nMySQL said: %@" = "An error occurred when trying to add the field '%1$@' via\n\n%2$@\n\nMySQL said: %3$@";
+"An error occurred when trying to add the field '%@' via\n\n%@\n\nMySQL said: %@" = "Đã xảy ra lỗi khi cố gắng thêm trường '%1$@' qua\n\n%2$@\n\nMySQL cho biết: %3$@ ";
 
 /* error changing field informative message */
-"An error occurred when trying to change the field '%@' via\n\n%@\n\nMySQL said: %@" = "An error occurred when trying to change the field '%1$@' via\n\n%2$@\n\nMySQL said: %3$@";
+"An error occurred when trying to change the field '%@' via\n\n%@\n\nMySQL said: %@" = "Đã xảy ra lỗi khi cố gắng thay đổi trường '%1$@' qua \n\n%2$@\n\nMySQL cho biết: %3$@";
 
 /* error changing table collation informative message */
-"An error occurred when trying to change the table collation to '%@'.\n\nMySQL said: %@" = "An error occurred when trying to change the table collation to '%1$@'.\n\nMySQL said: %2$@";
+"An error occurred when trying to change the table collation to '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi khi cố gắng thay đổi đối chiếu bảng thành '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* error changing table encoding informative message */
-"An error occurred when trying to change the table encoding to '%@'.\n\nMySQL said: %@" = "An error occurred when trying to change the table encoding to '%1$@'.\n\nMySQL said: %2$@";
+"An error occurred when trying to change the table encoding to '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi khi cố gắng thay đổi bảng mã hóa thành '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* error changing table type informative message */
-"An error occurred when trying to change the table type to '%@'.\n\nMySQL said: %@" = "An error occurred when trying to change the table type to '%1$@'.\n\nMySQL said: %2$@";
+"An error occurred when trying to change the table type to '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi khi cố gắng thay đổi loại bảng thành '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* error changing table comment informative message */
-"An error occurred when trying to change the table's comment to '%@'.\n\nMySQL said: %@" = "An error occurred when trying to change the table's comment to '%1$@'.\n\nMySQL said: %2$@";
+"An error occurred when trying to change the table's comment to '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi khi cố gắng thay đổi lời bình của bảng sang '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* an error occurred while analyzing the %@.\n\nMySQL said:%@ */
-"An error occurred while analyzing the %@.\n\nMySQL said:%@" = "An error occurred while analyzing the %1$@.\n\nMySQL said:%2$@";
+"An error occurred while analyzing the %@.\n\nMySQL said:%@" = "Đã xảy ra lỗi trong khi phân tích %1$@.\n\nMySQL cho biết: %2$@";
 
 /* an error occurred while fetching the optimized field type.\n\nMySQL said:%@ */
-"An error occurred while fetching the optimized field type.\n\nMySQL said:%@" = "An error occurred while fetching the optimized field type.\n\nMySQL said:%@";
+"An error occurred while fetching the optimized field type.\n\nMySQL said:%@" = "Đã xảy ra lỗi trong khi tìm nạp loại trường được tối ưu hóa.\n\nMySQL cho biết: %@";
 
 /* an error occurred while trying to flush the %@.\n\nMySQL said:%@ */
-"An error occurred while flushing the %@.\n\nMySQL said:%@" = "An error occurred while flushing the %1$@.\n\nMySQL said:%2$@";
+"An error occurred while flushing the %@.\n\nMySQL said:%@" = "Đã xảy ra lỗi trong khi flushing %1$@.\n\nMySQL cho biết: %2$@";
 
 /* sql import error message */
-"An error occurred while importing SQL" = "An error occurred while importing SQL";
+"An error occurred while importing SQL" = "Đã xảy ra lỗi khi nhập SQL vào";
 
 /* an error occurred while trying to optimze the %@.\n\nMySQL said:%@ */
-"An error occurred while optimzing the %@.\n\nMySQL said:%@" = "An error occurred while optimzing the %1$@.\n\nMySQL said:%2$@";
+"An error occurred while optimzing the %@.\n\nMySQL said:%@" = "Đã xảy ra lỗi trong khi tối ưu hóa %1$@.\n\nMySQL cho biết: %2$@";
 
 /* an error occurred while performing the checksum on the %@.\n\nMySQL said:%@ */
-"An error occurred while performing the checksum on %@.\n\nMySQL said:%@" = "An error occurred while performing the checksum on %1$@.\n\nMySQL said:%2$@";
+"An error occurred while performing the checksum on %@.\n\nMySQL said:%@" = "Đã xảy ra lỗi trong khi thực hiện tổng kiểm tra trên %1$@.\n\nMySQL cho biết: %2$@";
 
 /* an error occurred while trying to repair the %@.\n\nMySQL said:%@ */
-"An error occurred while repairing the %@.\n\nMySQL said:%@" = "An error occurred while repairing the %1$@.\n\nMySQL said:%2$@";
+"An error occurred while repairing the %@.\n\nMySQL said:%@" = "Đã xảy ra lỗi trong khi sửa chữa %1$@.\n\nMySQL cho biết:%2$@";
 
 /* message of panel when retrieving information failed */
-"An error occurred while retrieving information.\nMySQL said: %@" = "An error occurred while retrieving information.\nMySQL said: %@";
+"An error occurred while retrieving information.\nMySQL said: %@" = "Đã xảy ra lỗi trong khi truy xuất thông tin.\nMySQL said: %@";
 
 /* error retrieving table information informative message */
-"An error occurred while retrieving the information for table '%@'. Please try again.\n\nMySQL said: %@" = "An error occurred while retrieving the information for table '%1$@'. Please try again.\n\nMySQL said: %2$@";
+"An error occurred while retrieving the information for table '%@'. Please try again.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi truy xuất thông tin cho bảng '%1$@'. Vui lòng thử lại.\n\nMySQL cho biết: %2$@";
 
 /* error retrieving table information informative message */
-"An error occurred while retrieving the trigger information for table '%@'. Please try again.\n\nMySQL said: %@" = "An error occurred while retrieving the trigger information for table '%1$@'. Please try again.\n\nMySQL said: %2$@";
+"An error occurred while retrieving the trigger information for table '%@'. Please try again.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi truy xuất thông tin kích hoạt cho bảng '%1$@'. Vui lòng thử lại.\n\nMySQL cho biết: %2$@";
 
 /* error adding new column informative message */
-"An error occurred while trying to add the new column '%@' by\n\n%@.\n\nMySQL said: %@" = "An error occurred while trying to add the new column '%1$@' by\n\n%2$@.\n\nMySQL said: %3$@";
+"An error occurred while trying to add the new column '%@' by\n\n%@.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng thêm cột mới '%1$@' bởi\n\n%2$@.\n\nMySQL cho biết: %3$@";
 
 /* error adding new table informative message */
-"An error occurred while trying to add the new table '%@' by\n\n%@.\n\nMySQL said: %@" = "An error occurred while trying to add the new table '%1$@' by\n\n%2$@.\n\nMySQL said: %3$@";
+"An error occurred while trying to add the new table '%@' by\n\n%@.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng thêm bảng mới '%1$@' bởi\n\n%2$@.\n\nMySQL cho biết: %3$@";
 
 /* error adding new table informative message */
-"An error occurred while trying to add the new table '%@'.\n\nMySQL said: %@" = "An error occurred while trying to add the new table '%1$@'.\n\nMySQL said: %2$@";
+"An error occurred while trying to add the new table '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng thêm bảng mới '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* error while trying to alter table message */
-"An error occurred while trying to alter table '%@'.\n\nMySQL said: %@" = "An error occurred while trying to alter table '%1$@'.\n\nMySQL said: %2$@";
+"An error occurred while trying to alter table '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng thay đổi bảng '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* an error occurred while trying to check the %@.\n\nMySQL said:%@ */
-"An error occurred while trying to check the %@.\n\nMySQL said:%@" = "An error occurred while trying to check the %1$@.\n\nMySQL said:%2$@";
+"An error occurred while trying to check the %@.\n\nMySQL said:%@" = "Đã xảy ra lỗi trong khi cố gắng kiểm tra %1$@.\n\nMySQL cho biết:%2$@";
 
 /* error deleting relation informative message */
-"An error occurred while trying to delete the relation '%@'.\n\nMySQL said: %@" = "An error occurred while trying to delete the relation '%1$@'.\n\nMySQL said: %2$@";
+"An error occurred while trying to delete the relation '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng xóa mối quan hệ '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* unable to get list of users informative message */
-"An error occurred while trying to get the list of users. Please make sure you have the necessary privileges to perform user management, including access to the mysql.user table." = "An error occurred while trying to get the list of users. Please make sure you have the necessary privileges to perform user management, including access to the mysql.user table.";
+"An error occurred while trying to get the list of users. Please make sure you have the necessary privileges to perform user management, including access to the mysql.user table." = "Đã xảy ra lỗi trong khi cố gắng lấy danh sách người dùng. Vui lòng đảm bảo rằng bạn có các đặc quyền cần thiết để thực hiện quản lý người dùng, bao gồm quyền truy cập vào bảng  mysql.user .";
 
 /* error importing table informative message */
-"An error occurred while trying to import a table via: \n%@\n\n\nMySQL said: %@" = "An error occurred while trying to import a table via: \n%1$@\n\n\nMySQL said: %2$@";
+"An error occurred while trying to import a table via: \n%@\n\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng nhập bảng thông qua: \n%1$@\n\n\nMySQL cho biết: %2$@";
 
 /* error moving field informative message */
-"An error occurred while trying to move the field.\n\nMySQL said: %@" = "An error occurred while trying to move the field.\n\nMySQL said: %@";
+"An error occurred while trying to move the field.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng di chuyển trường.\n\nMySQL cho biết: %@";
 
 /* error resetting auto_increment informative message */
-"An error occurred while trying to reset AUTO_INCREMENT of table '%@'.\n\nMySQL said: %@" = "An error occurred while trying to reset AUTO_INCREMENT of table '%1$@'.\n\nMySQL said: %2$@";
+"An error occurred while trying to reset AUTO_INCREMENT of table '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng thiết lập lại AUTO_INCREMENT của bảng '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* error truncating table informative message */
-"An error occurred while trying to truncate the table '%@'.\n\nMySQL said: %@" = "An error occurred while trying to truncate the table '%1$@'.\n\nMySQL said: %2$@";
+"An error occurred while trying to truncate the table '%@'.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng cắt bớt bảng '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* mysql error occurred informative message */
-"An error occurred whilst trying to perform the operation.\n\nMySQL said: %@" = "An error occurred whilst trying to perform the operation.\n\nMySQL said: %@";
+"An error occurred whilst trying to perform the operation.\n\nMySQL said: %@" = "Đã xảy ra lỗi trong khi cố gắng thực hiện thao tác.\n\nMySQL cho biết: %@";
 
 /* Export files creation error explanatory text */
-"An unhandled error occurred when attempting to create %lu of the export files.  Please check the details and try again." = "An unhandled error occurred when attempting to create %lu of the export files.  Please check the details and try again.";
+"An unhandled error occurred when attempting to create %lu of the export files.  Please check the details and try again." = "Đã xảy ra lỗi chưa được xử lý khi cố gắng tạo %lu của các tệp xuất. Vui lòng kiểm tra các chi tiết và thử lại. ";
 
 /* All export files creation error explanatory text */
-"An unhandled error occurred when attempting to create each of the export files.  Please check the details and try again." = "An unhandled error occurred when attempting to create each of the export files.  Please check the details and try again.";
+"An unhandled error occurred when attempting to create each of the export files.  Please check the details and try again." = "Đã xảy ra lỗi chưa được xử lý khi cố gắng tạo từng tệp xuất. Vui lòng kiểm tra chi tiết và thử lại.";
 
 /* Export file creation error explanatory text */
-"An unhandled error occurred when attempting to create the export file.  Please check the details and try again." = "An unhandled error occurred when attempting to create the export file.  Please check the details and try again.";
+"An unhandled error occurred when attempting to create the export file.  Please check the details and try again." = "Đã xảy ra lỗi chưa được xử lý khi cố gắng tạo tệp xuất. Vui lòng kiểm tra các chi tiết và thử lại.";
 
 /* ANALYZE one or more tables - result title */
-"Analyze %@" = "Analyze %@";
+"Analyze %@" = "Phân tích %@";
 
 /* analyze selected items menu item */
-"Analyze Selected Items" = "Analyze Selected Items";
+"Analyze Selected Items" = "Phân tích các mục đã chọn ";
 
 /* analyze table menu item */
-"Analyze Table" = "Analyze Table";
+"Analyze Table" = "Phân tích bảng ";
 
 /* analyze table failed message */
-"Analyze table failed." = "Analyze table failed.";
+"Analyze table failed." = "Phân tích bảng thất bại.";
 
 /* change table type informative message */
-"Are you sure you want to change this table's type to %@?\n\nPlease be aware that changing a table's type has the potential to cause the loss of some or all of its data. This action cannot be undone." = "Are you sure you want to change this table's type to %@?\n\nPlease be aware that changing a table's type has the potential to cause the loss of some or all of its data. This action cannot be undone.";
+"Are you sure you want to change this table's type to %@?\n\nPlease be aware that changing a table's type has the potential to cause the loss of some or all of its data. This action cannot be undone." = "Bạn có chắc chắn muốn thay đổi kiểu của bảng này thành %@?\n\nXin lưu ý rằng việc thay đổi loại của bảng có khả năng gây mất một số hoặc tất cả dữ liệu của nó. Hành động này không thể được hoàn tác.";
 
 /* clear global history list informative message */
-"Are you sure you want to clear the global history list? This action cannot be undone." = "Are you sure you want to clear the global history list? This action cannot be undone.";
+"Are you sure you want to clear the global history list? This action cannot be undone." = "Bạn có chắc chắn muốn xóa toàn bộ lịch sử? Hành động này không thể hoàn tác.";
 
 /* clear history list for %@ informative message */
-"Are you sure you want to clear the history list for %@? This action cannot be undone." = "Are you sure you want to clear the history list for %@? This action cannot be undone.";
+"Are you sure you want to clear the history list for %@? This action cannot be undone." = "Bạn có chắc chắn muốn xóa danh sách lịch sử cho %@? Hành động này không thể được hoàn tác.";
 
 /* truncate tables informative message */
-"Are you sure you want to delete ALL records in the selected tables? This operation cannot be undone." = "Are you sure you want to delete ALL records in the selected tables? This operation cannot be undone.";
+"Are you sure you want to delete ALL records in the selected tables? This operation cannot be undone." = "Bạn có chắc chắn muốn xóa tất cả các bản ghi trong các bảng đã chọn? Hoạt động này không thể được hoàn tác.";
 
 /* truncate table informative message */
-"Are you sure you want to delete ALL records in the table '%@'? This operation cannot be undone." = "Are you sure you want to delete ALL records in the table '%@'? This operation cannot be undone.";
+"Are you sure you want to delete ALL records in the table '%@'? This operation cannot be undone." = "Bạn có chắc chắn muốn xóa tất cả các bản ghi trong bảng '%@'? Hoạt động này không thể được hoàn tác.";
 
 /* delete all rows informative message */
-"Are you sure you want to delete all the rows from this table? This action cannot be undone." = "Are you sure you want to delete all the rows from this table? This action cannot be undone.";
+"Are you sure you want to delete all the rows from this table? This action cannot be undone." = "Bạn có chắc chắn muốn xóa tất cả các hàng khỏi bảng này? Hành động này không thể được hoàn tác.";
 
 /* delete table/view informative message */
-"Are you sure you want to delete the %@ '%@'? This operation cannot be undone." = "Are you sure you want to delete the %1$@ '%2$@'? This operation cannot be undone.";
+"Are you sure you want to delete the %@ '%@'? This operation cannot be undone." = "Bạn có chắc chắn muốn xóa %1$@ '%2$@'? Hoạt động này không thể được hoàn tác.";
 
 /* delete database informative message */
-"Are you sure you want to delete the database '%@'? This operation cannot be undone." = "Are you sure you want to delete the database '%@'? This operation cannot be undone.";
+"Are you sure you want to delete the database '%@'? This operation cannot be undone." = "Bạn có chắc chắn muốn xóa cơ sở dữ liệu '%@'? Hoạt động này không thể được hoàn tác.";
 
 /* delete database informative message */
-"Are you sure you want to delete the favorite '%@'? This operation cannot be undone." = "Are you sure you want to delete the favorite '%@'? This operation cannot be undone.";
+"Are you sure you want to delete the favorite '%@'? This operation cannot be undone." = "Bạn có chắc chắn muốn xóa '%@' khỏi mục yêu thích? Thao tác này không thể được hoàn tác.";
 
 /* delete field informative message */
-"Are you sure you want to delete the field '%@'? This action cannot be undone." = "Are you sure you want to delete the field '%@'? This action cannot be undone.";
+"Are you sure you want to delete the field '%@'? This action cannot be undone." = "Bạn có chắc chắn muốn xóa trường '%@'? Hành động này không thể được hoàn tác.";
 
 /* delete database informative message */
-"Are you sure you want to delete the group '%@'? All groups and favorites within this group will also be deleted. This operation cannot be undone." = "Are you sure you want to delete the group '%@'? All groups and favorites within this group will also be deleted. This operation cannot be undone.";
+"Are you sure you want to delete the group '%@'? All groups and favorites within this group will also be deleted. This operation cannot be undone." = "Bạn có chắc chắn rằng bạn muốn xóa nhóm '%@'? Tất cả các nhóm và mục yêu thích trong nhóm này cũng sẽ bị xóa. Hoạt động này không thể được hoàn tác.";
 
 /* delete index informative message */
-"Are you sure you want to delete the index '%@'? This action cannot be undone." = "Are you sure you want to delete the index '%@'? This action cannot be undone.";
-
+"Are you sure you want to delete the index '%@'? This action cannot be undone." = "Bạn có chắc chắn muốn xóa chỉ mục '%@'? Hành động này không thể được hoàn tác.";
 /* delete tables/views informative message */
-"Are you sure you want to delete the selected %@? This operation cannot be undone." = "Are you sure you want to delete the selected %@? This operation cannot be undone.";
+"Are you sure you want to delete the selected %@? This operation cannot be undone." = "Bạn có chắc chắn muốn xóa %@? Hoạt động này không thể được hoàn tác.";
 
 /* delete rows informative message */
-"Are you sure you want to delete the selected %ld rows from this table? This action cannot be undone." = "Are you sure you want to delete the selected %ld rows from this table? This action cannot be undone.";
+"Are you sure you want to delete the selected %ld rows from this table? This action cannot be undone." = "Bạn có chắc chắn muốn xóa các hàng %ld đã chọn khỏi bảng này không? Hành động này không thể được hoàn tác.";
 
 /* delete selected relation informative message */
-"Are you sure you want to delete the selected relations? This action cannot be undone." = "Are you sure you want to delete the selected relations? This action cannot be undone.";
+"Are you sure you want to delete the selected relations? This action cannot be undone." = "Bạn có chắc chắn muốn xóa các mối quan hệ đã chọn? Hành động này không thể được hoàn tác.";
 
 /* delete selected row informative message */
-"Are you sure you want to delete the selected row from this table? This action cannot be undone." = "Are you sure you want to delete the selected row from this table? This action cannot be undone.";
+"Are you sure you want to delete the selected row from this table? This action cannot be undone." = "Bạn có chắc chắn muốn xóa hàng đã chọn khỏi bảng này không? Hành động này không thể được hoàn tác.";
 
 /* delete selected trigger informative message */
-"Are you sure you want to delete the selected triggers? This action cannot be undone." = "Are you sure you want to delete the selected triggers? This action cannot be undone.";
+"Are you sure you want to delete the selected triggers? This action cannot be undone." = "Bạn có chắc chắn muốn xóa các kích hoạt đã chọn? Hành động này không thể được hoàn tác.";
 
 /* kill connection informative message */
-"Are you sure you want to kill connection ID %lld?\n\nPlease be aware that continuing to kill this connection may result in data corruption. Please proceed with caution." = "Are you sure you want to kill connection ID %lld?\n\nPlease be aware that continuing to kill this connection may result in data corruption. Please proceed with caution.";
+"Are you sure you want to kill connection ID %lld?\n\nPlease be aware that continuing to kill this connection may result in data corruption. Please proceed with caution." = "Bạn có chắc chắn muốn triệt tiêu kết nối có ID %lld?\n\nXin lưu ý rằng việc tiếp tục triệt tiêu kết nối này có thể dẫn đến hư hỏng dữ liệu. Hãy tiến hành thận trọng. ";
 
 /* kill query informative message */
-"Are you sure you want to kill the current query executing on connection ID %lld?\n\nPlease be aware that continuing to kill this query may result in data corruption. Please proceed with caution." = "Are you sure you want to kill the current query executing on connection ID %lld?\n\nPlease be aware that continuing to kill this query may result in data corruption. Please proceed with caution.";
+"Are you sure you want to kill the current query executing on connection ID %lld?\n\nPlease be aware that continuing to kill this query may result in data corruption. Please proceed with caution." = "Bạn có chắc chắn muốn triệt tiêu truy vấn đang thực thi hiện tại trên kết nối có ID %lld?\n\nXin lưu ý rằng việc tiếp tục triệt tiêu truy vấn này có thể dẫn đến hư hỏng dữ liệu. Hãy tiến hành thận trọng.";
 
 /* Bundle Editor : Remove-Bundle: remove dialog message */
-"Are you sure you want to move the selected Bundle to the Trash and remove them respectively?" = "Are you sure you want to move the selected Bundle to the Trash and remove them respectively?";
+"Are you sure you want to move the selected Bundle to the Trash and remove them respectively?" = "Bạn có chắc chắn muốn chuyển gói đã chọn vào thùng rác và loại bỏ chúng luôn?";
 
 /* continue to print informative message */
-"Are you sure you want to print the current content view of the table '%@'?\n\nIt currently contains %@ rows, which may take a significant amount of time to print." = "Are you sure you want to print the current content view of the table '%1$@'?\n\nIt currently contains %2$@ rows, which may take a significant amount of time to print.";
+"Are you sure you want to print the current content view of the table '%@'?\n\nIt currently contains %@ rows, which may take a significant amount of time to print." = "Bạn có chắc chắn muốn in chế độ xem nội dung hiện tại của bảng'%1$@'?\n\nNó hiện chứa %2$@ hàng, có thể mất một lượng đáng kể thời gian để in.";
 
 /* remove all query favorites informative message */
-"Are you sure you want to remove all of your saved query favorites? This action cannot be undone." = "Are you sure you want to remove all of your saved query favorites? This action cannot be undone.";
+"Are you sure you want to remove all of your saved query favorites? This action cannot be undone." = "Bạn có chắc chắn muốn xóa tất cả các mục yêu thích truy vấn đã lưu của bạn? Hành động này không thể được hoàn tác.";
 
 /* remove all selected content filters informative message */
-"Are you sure you want to remove all selected content filters? This action cannot be undone." = "Are you sure you want to remove all selected content filters? This action cannot be undone.";
+"Are you sure you want to remove all selected content filters? This action cannot be undone." = "Bạn có chắc chắn muốn xóa tất cả các bộ lọc nội dung đã chọn? Hành động này không thể được hoàn tác.";
 
 /* remove all selected query favorites informative message */
-"Are you sure you want to remove all selected query favorites? This action cannot be undone." = "Are you sure you want to remove all selected query favorites? This action cannot be undone.";
+"Are you sure you want to remove all selected query favorites? This action cannot be undone." = "Bạn có chắc chắn muốn xóa tất cả các yêu thích truy vấn đã chọn? Hành động này không thể được hoàn tác.";
 
 /* Table Info Section : current value of auto_increment */
 "auto_increment: %@" = "auto_increment: %@";
 
 /* Encoding autodetect menu item */
-"Autodetect" = "Autodetect";
+"Autodetect" = "Tự động phát hiện";
 
 /* background label for color table (Prefs > Editor) */
 "Background" = "Background";
 
 /* backtick quote label for color table (Prefs > Editor) */
-"Backtick Quote" = "Backtick Quote";
+"Backtick Quote" = "Trích dẫn Backtick";
 
 /* bash error */
-"BASH Error" = "BASH Error";
+"BASH Error" = "Lỗi BASH";
 
 /* toolbar item label for switching to the Table Content tab */
-"Browse & Edit Table Content" = "Browse & Edit Table Content";
+"Browse & Edit Table Content" = "Duyệt & chỉnh sửa nội dung bảng";
 
 /* build label */
 "build" = "build";
@@ -548,10 +547,10 @@
 "Build" = "Build";
 
 /* bundle editor menu item label */
-"Bundle Editor" = "Bundle Editor";
+"Bundle Editor" = "Trình soạn thảo Bundle";
 
 /* bundle error */
-"Bundle Error" = "Bundle Error";
+"Bundle Error" = "Lỗi Bundle";
 
 /* bundles menu item label */
 "Bundles" = "Bundles";
@@ -560,16 +559,16 @@
 "BUNDLES" = "BUNDLES";
 
 /* Bundle Editor : Outline View : Menu Category item : tooltip */
-"Bundles in category %@" = "Bundles in category %@";
+"Bundles in category %@" = "Bundles trong category %@";
 
 /* bundles installation error */
-"Bundles Installation Error" = "Bundles Installation Error";
+"Bundles Installation Error" = "Lỗi cài đặt Bundles";
 
 /* bzip2 compression export summary - within a sentence */
-"bzip2 compression" = "bzip2 compression";
+"bzip2 compression" = "nén bzip2";
 
 /* description of geometry */
-"Can store a single spatial value of types POINT, LINESTRING or POLYGON. Spatial support in MySQL is based on the OpenGIS Geometry Model." = "Can store a single spatial value of types POINT, LINESTRING or POLYGON. Spatial support in MySQL is based on the OpenGIS Geometry Model.";
+"Can store a single spatial value of types POINT, LINESTRING or POLYGON. Spatial support in MySQL is based on the OpenGIS Geometry Model." = "Có thể lưu trữ được một vùng giá trị của kiểu POINT, LINESTRING hoặc POLYGON. Hỗ trợ vùng trong MySQL được dựa trên OpenGIS Geometry Model.";
 
 /* Bundle Editor : Remove-Bundle: cancel button
  cancel
@@ -577,163 +576,163 @@
  Open Files : Bundle : Already-Installed : Cancel button
  Preferences : Network : Custom SSH client : warning dialog : cancel button
  shutdown server : confirmation dialog : cancel button */
-"Cancel" = "Cancel";
+"Cancel" = "Huỷ bỏ";
 
 /* sql import : charset error alert : cancel button */
-"Cancel Import" = "Cancel Import";
+"Cancel Import" = "Ngừng nhập";
 
 /* cancelling task status message */
-"Cancelling..." = "Cancelling...";
+"Cancelling..." = "Đang huỷ...";
 
 /* empty query informative message */
-"Cannot save an empty query." = "Cannot save an empty query.";
+"Cannot save an empty query." = "Không thể lưu một truy vấn trống.";
 
 /* caret label for color table (Prefs > Editor) */
 "Caret" = "Caret";
 
 /* change button */
-"Change" = "Change";
+"Change" = "Thay đổi";
 
 /* change focus to table list menu item */
-"Change Focus to Table List" = "Change Focus to Table List";
+"Change Focus to Table List" = "Thay đổi tiêu điểm sang danh sách bảng";
 
 /* change table type message */
-"Change table type" = "Change table type";
+"Change table type" = "Thay đổi kiểu bảng";
 
 /* unsaved changes informative message */
-"Changes have been made, which will be lost if this window is closed. Are you sure you want to continue" = "Changes have been made, which will be lost if this window is closed. Are you sure you want to continue";
+"Changes have been made, which will be lost if this window is closed. Are you sure you want to continue" = "Những thay đổi đã được thực hiện sẽ bị mất nếu cửa sổ này bị đóng. Bạn có chắc chắn muốn tiếp tục";
 
 /* character set client: %@ */
 "character set client: %@" = "character set client: %@";
 
 /* CHECK one or more tables - result title */
-"Check %@" = "Check %@";
+"Check %@" = "Kiểm tra %@";
 
 /* check of all selected items successfully passed message */
-"Check of all selected items successfully passed." = "Check of all selected items successfully passed.";
+"Check of all selected items successfully passed." = "Đã kiểm tra tất cả các mục đã chọn thành công.";
 
 /* check option: %@ */
-"check option: %@" = "check option: %@";
+"check option: %@" = "Kiểm tra tùy chọn: %@";
 
 /* check selected items menu item */
-"Check Selected Items" = "Check Selected Items";
+"Check Selected Items" = "Kiểm tra các mục được chọn";
 
 /* check table menu item */
-"Check Table" = "Check Table";
+"Check Table" = "Kiểm tra bảng";
 
 /* check table failed message */
-"Check table failed." = "Check table failed.";
+"Check table failed." = "Kiểm tra bảng thất bại.";
 
 /* check table successfully passed message */
-"Check table successfully passed." = "Check table successfully passed.";
+"Check table successfully passed." = "Kiểm tra bảng thành công.";
 
 /* check view menu item */
-"Check View" = "Check View";
+"Check View" = "Kiểm tra Xem";
 
 /* checking field data for editing task description */
-"Checking field data for editing..." = "Checking field data for editing...";
+"Checking field data for editing..." = "Đang kiểm tra dữ liệu trường để chỉnh sửa...";
 
 /* checksum %@ message */
 "Checksum %@" = "Checksum %@";
 
 /* checksum selected items menu item */
-"Checksum Selected Items" = "Checksum Selected Items";
+"Checksum Selected Items" = "Checksum các mục được chọn";
 
 /* checksum table menu item */
-"Checksum Table" = "Checksum Table";
+"Checksum Table" = "Checksum Bảng";
 
 /* Checksums of %@ message */
-"Checksums of %@" = "Checksums of %@";
+"Checksums of %@" = "Checksum của %@";
 
 /* menu item for choose db */
-"Choose Database..." = "Choose Database...";
+"Choose Database..." = "Chọn Cơ Sở Dữ Liệu...";
 
 /* cancelling export cleaning up message */
-"Cleaning up..." = "Cleaning up...";
+"Cleaning up..." = "Đang dọn dẹp...";
 
 /* clear button */
-"Clear" = "Clear";
+"Clear" = "Xoá";
 
 /* toolbar item for clear console */
-"Clear Console" = "Clear Console";
+"Clear Console" = "Xoá Console";
 
 /* clear global history menu item title */
-"Clear Global History" = "Clear Global History";
+"Clear Global History" = "Xoá toàn bộ lịch sử";
 
 /* clear history for %@ menu title */
-"Clear History for %@" = "Clear History for %@";
+"Clear History for %@" = "Xoá lịch sử của %@";
 
 /* clear history message */
-"Clear History?" = "Clear History?";
+"Clear History?" = "Xoá lịch sử?";
 
 /* tooltip for toolbar item for clear console */
-"Clear the console which shows all MySQL commands performed by Sequel Ace" = "Clear the console which shows all MySQL commands performed by Sequel Ace";
+"Clear the console which shows all MySQL commands performed by Sequel Ace" = "Xóa bảng điều khiển nơi hiển thị tất cả các lệnh MySQL đã thực hiện bởi Sequel Ace ";
 
 /* clear the document-based history list tooltip message */
-"Clear the document-based history list" = "Clear the document-based history list";
+"Clear the document-based history list" = "Xoá danh sách lịch sử của document-based";
 
 /* clear the global history list tooltip message */
-"Clear the global history list" = "Clear the global history list";
+"Clear the global history list" = "Xoá toàn bộ danh sách lịch sử";
 
 /* Close menu item */
-"Close" = "Close";
+"Close" = "Đóng";
 
 /* close tab context menu item */
-"Close Tab" = "Close Tab";
+"Close Tab" = "Đóng Tab";
 
 /* Close Window menu item */
-"Close Window" = "Close Window";
+"Close Window" = "Đóng cửa sổ";
 
 /* collation label (Navigator) */
 "Collation" = "Collation";
 
 /* collation connection: %@ */
-"collation connection: %@" = "collation connection: %@";
+"collation connection: %@" = "collation kết nối: %@";
 
 /* comment label */
-"Comment" = "Comment";
+"Comment" = "Bình luận";
 
 /* Title of action menu item to comment line */
-"Comment Line" = "Comment Line";
+"Comment Line" = "Bình luận dòng";
 
 /* Title of action menu item to comment selection */
-"Comment Selection" = "Comment Selection";
+"Comment Selection" = "Lựa chọn bình luận";
 
 /* connect button */
-"Connect" = "Connect";
+"Connect" = "Kết nối";
 
 /* Connect via socket button */
-"Connect via socket" = "Connect via socket";
+"Connect via socket" = "Kết nối qua socket";
 
 /* connection established message */
-"Connected" = "Connected";
+"Connected" = "Đã kết nối";
 
 /* description for connected notification */
-"Connected to %@" = "Connected to %@";
+"Connected to %@" = "Đã kết nối tới %@";
 
 /* message of panel when connection to db failed */
-"Connected to host, but unable to connect to database %@.\n\nBe sure that the database exists and that you have the necessary privileges.\n\nMySQL said: %@" = "Connected to host, but unable to connect to database %1$@.\n\nBe sure that the database exists and that you have the necessary privileges.\n\nMySQL said: %2$@";
+"Connected to host, but unable to connect to database %@.\n\nBe sure that the database exists and that you have the necessary privileges.\n\nMySQL said: %@" = "Được kết nối với máy chủ, nhưng không thể kết nối với cơ sở dữ liệu %1$@.\n\nHãy chắc chắn rằng cơ sở dữ liệu tồn tại và bạn có các đặc quyền cần thiết.\n\nMySQL cho biết: %2$@";
 
 /* Generic connecting very short status message */
-"Connecting..." = "Connecting...";
+"Connecting..." = "Đang kết nối...";
 
 /* window title string indicating that sp is connecting */
-"Connecting…" = "Connecting…";
+"Connecting…" = "Đang kết nối…";
 
 /* error while reading connection data file */
-"Connection data file couldn't be read." = "Connection data file couldn't be read.";
+"Connection data file couldn't be read." = "Không thể đọc tệp chứa dữ liệu kết nối.";
 
 /* message error while reading connection data file and suggesting to save it under a differnet name */
-"Connection data file %@ couldn't be read. Please try to save the document under a different name." = "Connection data file %@ couldn't be read. Please try to save the document under a different name.";
+"Connection data file %@ couldn't be read. Please try to save the document under a different name." = "Tệp dữ liệu kết nối %@ không thể đọc được. Vui lòng thử lưu tài liệu dưới một tên khác.";
 
 /* connection failed title */
-"Connection failed!" = "Connection failed!";
+"Connection failed!" = "Kết nối thất bại!";
 
 /* Connection file is encrypted */
-"Connection file is encrypted" = "Connection file is encrypted";
+"Connection file is encrypted" = "Tệp kết nối đã được mã hóa";
 
 /* Connection success very short status message */
-"Connection succeeded" = "Connection succeeded";
+"Connection succeeded" = "Kết nối thành công";
 
 /* Console */
 "Console" = "Console";
@@ -742,92 +741,92 @@
 "ConsoleLog" = "ConsoleLog";
 
 /* toolbar item label for switching to the Table Content tab */
-"Content" = "Content";
+"Content" = "Nội dung";
 
 /* content filter clause is empty tooltip. */
-"Content Filter clause is empty." = "Content Filter clause is empty.";
+"Content Filter clause is empty." = "Mệnh đề bộ lọc nội dung trống.";
 
 /* continue button
  Continue button title */
-"Continue" = "Continue";
+"Continue" = "Tiếp tục";
 
 /* continue to print message */
-"Continue to print?" = "Continue to print?";
+"Continue to print?" = "Tiếp tục in?";
 
 /* Copy as RTF */
-"Copy as RTF" = "Copy as RTF";
+"Copy as RTF" = "Sao chép như RTF.";
 
 /* copy create func syntax menu item
  Table List : Context Menu : copy CREATE FUNCTION syntax */
-"Copy Create Function Syntax" = "Copy Create Function Syntax";
+"Copy Create Function Syntax" = "Sao chép Cú pháp chức năng";
 
 /* copy create proc syntax menu item
  Table List : Context Menu : Copy CREATE PROCEDURE syntax
  Table List : Gear Menu : Copy CREATE PROCEDURE syntax */
-"Copy Create Procedure Syntax" = "Copy Create Procedure Syntax";
+"Copy Create Procedure Syntax" = "Sao chép cú pháp Create Procedure";
 
 /* copy create syntaxes menu item
  Table List : Context Menu : Copy CREATE syntax (multiple selection)
  Table List : Gear Menu : Copy CREATE syntax (multiple selection) */
-"Copy Create Syntaxes" = "Copy Create Syntaxes";
+"Copy Create Syntaxes" = "Sao chép các cú pháp Create";
 
 /* copy create table syntax menu item
  Table List : Context Menu : Copy CREATE syntax (single table)
  Table List : Gear Menu : Copy CREATE syntax (single table) */
-"Copy Create Table Syntax" = "Copy Create Table Syntax";
+"Copy Create Table Syntax" = "Sao chép cú pháp Create Table";
 
 /* copy create view syntax menu item
  Table List : Context Menu : Copy CREATE view statement
  Table List : Gear Menu : Copy CREATE view statement */
-"Copy Create View Syntax" = "Copy Create View Syntax";
+"Copy Create View Syntax" = "Sao chép cú pháp Create View";
 
 /* copy server variable name menu item */
-"Copy Variable Name" = "Copy Variable Name";
+"Copy Variable Name" = "Sao chép tên biến.";
 
 /* copy server variable names menu item */
-"Copy Variable Names" = "Copy Variable Names";
+"Copy Variable Names" = "Sao chép tên biến.";
 
 /* copy server variable value menu item */
-"Copy Variable Value" = "Copy Variable Value";
+"Copy Variable Value" = "Sao chép giá trị biến";
 
 /* copy server variable values menu item */
-"Copy Variable Values" = "Copy Variable Values";
+"Copy Variable Values" = "Sao chép giá trị biến";
 
 /* Procedure/function export permission error */
-"Could not export the %@ '%@' because of a permissions error.\n" = "Could not export the %1$@ '%2$@' because of a permissions error.\n";
+"Could not export the %@ '%@' because of a permissions error.\n" = "Không thể xuất %1$@ '%2$@' bởi vì lỗi quyền truy cập.\n";
 
 /* Error when we can't parse/split file as CSV */
-"Could not parse file as CSV" = "Could not parse file as CSV";
+"Could not parse file as CSV" = "Không thể phân tích tập tin dưới dạng csv";
 
 /* message when database selection failed */
-"Could not select database" = "Could not select database";
+"Could not select database" = "Không thể chọn cơ sở dữ liệu";
 
 /* Alter Database : Query Failed ($1 = mysql error message) */
-"Couldn't alter database.\nMySQL said: %@" = "Couldn't alter database.\nMySQL said: %@";
+"Couldn't alter database.\nMySQL said: %@" = "Không thể thay đổi cơ sở dữ liệu.\nMySQL cho biết: %@";
 
 /* Couldn't copy default themes to Application Support Theme folder!\nError: %@ */
-"Couldn't copy default themes to Application Support Theme folder!\nError: %@" = "Couldn't copy default themes to Application Support Theme folder!\nError: %@";
+"Couldn't copy default themes to Application Support Theme folder!\nError: %@" = "Không thể sao chép các chủ đề mặc định vào thư mục chủ đề hỗ trợ ứng dụng!\nLỗi: %@";
 
 /* message of panel when table cannot be created */
-"Couldn't create '%@'.\nMySQL said: %@" = "Couldn't create '%1$@'.\nMySQL said: %2$@";
+"Couldn't create '%@'.\nMySQL said: %@" = "Không thể tạo '%1$@'.\nMySQL cho biết: %2$@";
 
 /* Couldn't create Application Support Bundle folder!\nError: %@ */
-"Couldn't create Application Support Bundle folder!\nError: %@" = "Couldn't create Application Support Bundle folder!\nError: %@";
+"Couldn't create Application Support Bundle folder!\nError: %@" = "Không thể tạo thư mục Application Support Bundle!\Lỗi: %@";
 
 /* Couldn't create Application Support Theme folder!\nError: %@ */
-"Couldn't create Application Support Theme folder!\nError: %@" = "Couldn't create Application Support Theme folder!\nError: %@";
+"Couldn't create Application Support Theme folder!\nError: %@" = "Không thể tạo thư mục Application Support Theme!\Lỗi: %@";
 
 /* message of panel when creation of db failed */
-"Couldn't create database.\nMySQL said: %@" = "Couldn't create database.\nMySQL said: %@";
+"Couldn't create database.\nMySQL said: %@" = "Không thể tạo cơ sở dữ liệu.\nMySQL cho biết: %@";
 
 /* message of panel when an item cannot be deleted */
-"Couldn't delete '%@'.\n\nMySQL said: %@" = "Couldn't delete '%1$@'.\n\nMySQL said: %2$@";
+"Couldn't delete '%@'.\n\nMySQL said: %@" = "Không thể xóa '%1$@'.\n\nMySQL cho biết: %2$@";
 
 /* message of panel when an item cannot be deleted including informative message about using force deletion */
-"Couldn't delete '%@'.\n\nSelecting the 'Force delete' option may prevent this issue, but may leave the database in an inconsistent state.\n\nMySQL said: %@" = "Couldn't delete '%1$@'.\n\nSelecting the 'Force delete' option may prevent this issue, but may leave the database in an inconsistent state.\n\nMySQL said: %2$@";
+"Couldn't delete '%@'.\n\nSelecting the 'Force delete' option may prevent this issue, but may leave the database in an inconsistent state.\n\nMySQL said: %@" = "Không thể xóa '%1$@'.\n\nTùy chọn 'Ép xoá' có thể giải quyết vấn đề này, nhưng có thể làm cơ sở dữ liệu rơi vào trạng thái không nhất quán.\n\nMySQL cho biết: %2$@";
 
 /* message of panel when field cannot be deleted */
-"Couldn't delete field %@.\nMySQL said: %@" = "Couldn't delete field %1$@.\nMySQL said: %2$@";
+"Couldn't delete field %@.\nMySQL said: %@" = "Couldn't delete field %1$@.\nMySQL cho biết: %2$@";
 
 /* message when deleteing all rows failed */
 "Couldn't delete rows.\n\nMySQL said: %@" = "Couldn't delete rows.\n\nMySQL said: %@";
@@ -836,7 +835,7 @@
 "Couldn't delete the database.\nMySQL said: %@" = "Couldn't delete the database.\nMySQL said: %@";
 
 /* message of panel when an item cannot be renamed */
-"Couldn't duplicate '%@'.\nMySQL said: %@" = "Couldn't duplicate '%1$@'.\nMySQL said: %2$@";
+"Couldn't duplicate '%@'.\nMySQL said: %@" = "Couldn't duplicate '%1$@'.\nMySQL cho biết: %2$@";
 
 /* message of panel when flushing privs failed */
 "Couldn't flush privileges.\nMySQL said: %@" = "Couldn't flush privileges.\nMySQL said: %@";
@@ -2917,13 +2916,13 @@
 "Unable to check table" = "Unable to check table";
 
 /* message of panel when connection to host failed due to access denied error */
-"Unable to connect to host %@ because access was denied.\n\nDouble-check your username and password and ensure that access from your current location is permitted.\n\nMySQL said: %@" = "Unable to connect to host %1$@ because access was denied.\n\nDouble-check your username and password and ensure that access from your current location is permitted.\n\nMySQL said: %2$@";
+"Unable to connect to host %@ because access was denied.\n\nDouble-check your username and password and ensure that access from your current location is permitted.\n\nMySQL said: %@" = "Unable to connect to host %1$@ because access was denied.\n\nDouble-check your username and password and ensure that access from your current location is permitted.\n\nMySQL cho biết: %2$@";
 
 /* message of panel when SSH port forwarding failed */
-"Unable to connect to host %@ because the port connection via SSH was refused.\n\nPlease ensure that your MySQL host is set up to allow TCP/IP connections (no --skip-networking) and is configured to allow connections from the host you are tunnelling via.\n\nYou may also want to check the port is correct and that you have the necessary privileges.\n\nChecking the error detail will show the SSH debug log which may provide more details.\n\nMySQL said: %@" = "Unable to connect to host %1$@ because the port connection via SSH was refused.\n\nPlease ensure that your MySQL host is set up to allow TCP/IP connections (no --skip-networking) and is configured to allow connections from the host you are tunnelling via.\n\nYou may also want to check the port is correct and that you have the necessary privileges.\n\nChecking the error detail will show the SSH debug log which may provide more details.\n\nMySQL said: %2$@";
+"Unable to connect to host %@ because the port connection via SSH was refused.\n\nPlease ensure that your MySQL host is set up to allow TCP/IP connections (no --skip-networking) and is configured to allow connections from the host you are tunnelling via.\n\nYou may also want to check the port is correct and that you have the necessary privileges.\n\nChecking the error detail will show the SSH debug log which may provide more details.\n\nMySQL said: %@" = "Unable to connect to host %1$@ because the port connection via SSH was refused.\n\nPlease ensure that your MySQL host is set up to allow TCP/IP connections (no --skip-networking) and is configured to allow connections from the host you are tunnelling via.\n\nYou may also want to check the port is correct and that you have the necessary privileges.\n\nChecking the error detail will show the SSH debug log which may provide more details.\n\nMySQL cho biết: %2$@";
 
 /* message of panel when connection to host failed */
-"Unable to connect to host %@, or the request timed out.\n\nBe sure that the address is correct and that you have the necessary privileges, or try increasing the connection timeout (currently %ld seconds).\n\nMySQL said: %@" = "Unable to connect to host %1$@, or the request timed out.\n\nBe sure that the address is correct and that you have the necessary privileges, or try increasing the connection timeout (currently %2$ld seconds).\n\nMySQL said: %3$@";
+"Unable to connect to host %@, or the request timed out.\n\nBe sure that the address is correct and that you have the necessary privileges, or try increasing the connection timeout (currently %ld seconds).\n\nMySQL said: %@" = "Unable to connect to host %1$@, or the request timed out.\n\nBe sure that the address is correct and that you have the necessary privileges, or try increasing the connection timeout (currently %2$ld seconds).\n\nMySQL cho biết: %3$@";
 
 /* message of panel when connection to host failed */
 "Unable to connect via the socket, or the request timed out.\n\nDouble-check that the socket path is correct and that you have the necessary privileges, and that the server is running.\n\nMySQL said: %@" = "Unable to connect via the socket, or the request timed out.\n\nDouble-check that the socket path is correct and that you have the necessary privileges, and that the server is running.\n\nMySQL said: %@";
@@ -3205,7 +3204,7 @@
 "Use known hosts from ssh config (ADVANCED)" = "Use known hosts from ssh config (ADVANCED)";
 
 /* The answer, yes */
-"Yes" = "Yes";
+"Yes" = "Đồng ý";
 
 /* Shown to remind users of their stale bookmarks */
 "A reminder of your stale secure bookmarks:<br /><br />%@<br />" = "A reminder of your stale secure bookmarks:<br /><br />%@<br />";
@@ -3256,40 +3255,40 @@
 "A new version is available" = "A new version is available";
 
 /* new version is available download button title */
-"Download" = "Download";
+"Download" = "Tải về";
 
 /* new version is available alert informativeText */
 "Version %@ is available. You are currently running %@" = "Version %@ is available. You are currently running %@";
 
 /* downloading new version window title */
-"Download Progress" = "Download Progress";
+"Download Progress" = "Đang tải về";
 
 /* downloading new version time remaining placeholder text */
-"Calculating time remaining..." = "Calculating time remaining...";
+"Calculating time remaining..." = "Đang tính toán thời gian còn lại...";
 
 /* downloading new version window message */
-"Downloading Sequel Ace - %@" = "Downloading Sequel Ace - %@";
+"Downloading Sequel Ace - %@" = "Đang tải Sequel Ace - %@";
 
 /* downloading new version time remaining estimate text */
-"About %.1f seconds left" = "About %.1f seconds left";
+"About %.1f seconds left" = "Khoảng %.1f giây nữa thôi";
 
 /* downloading new version failure alert title */
-"Download Failed" = "Download Failed";
+"Download Failed" = "Tải về thất bại";
 
 /* Tool tip for the Show alert when update is available preference on the Notifications pane */
-"Only available for GitHub downloads" = "Only available for GitHub downloads";
+"Only available for GitHub downloads" = "Chỉ khả dụng khi tải về từ Github";
 
 /* Tool tip warning for when the user sets auto-complete delay to zero */
-"WARNING: Setting the auto-complete delay to 0.0 can result in strange output." = "WARNING: Setting the auto-complete delay to 0.0 can result in strange output.";
+"WARNING: Setting the auto-complete delay to 0.0 can result in strange output." = "CẢNH BÁO: Setting the auto-complete delay to 0.0 can result in strange output.";
 
 /* downloading new version bytes of bytes done */
-"%@ of %@" = "%@ of %@";
+"%@ of %@" = "%@ của %@";
 
 /* Time zone set failed informative message */
-"\n\ntime_zone will be set to SYSTEM." = "\n\ntime_zone will be set to SYSTEM.";
+"\n\ntime_zone will be set to SYSTEM." = "\n\ntime_zone sẽ được đặt về HỆ THỐNG.";
 
 /* Menu item title for checking for updates */
-"Check for Updates..." = "Check for Updates...";
+"Check for Updates..." = "Kiểm tra Cập nhật...";
 
 /* Warning message during connection in case the variable skip-show-database is set to ON */
 "The skip-show-database variable of the database server is set to ON. Thus, you won't be able to list databases unless you have the SHOW DATABASES privilege.\n\nHowever, the databases are still accessible directly through SQL queries depending on your privileges." = "The skip-show-database variable of the database server is set to ON. Thus, you won't be able to list databases unless you have the SHOW DATABASES privilege.\n\nHowever, the databases are still accessible directly through SQL queries depending on your privileges.";
@@ -3298,10 +3297,10 @@
 "GitHub Request Failed" = "GitHub Request Failed";
 
 /* Info alert title when there are Newer Releases Available */
-"No Newer Release Available" = "No Newer Release Available";
+"No Newer Release Available" = "Không có phiên bản mới hơn nào";
 
 /* Info alert message when there are Newer Releases Available */
-"You are currently running the latest release." = "You are currently running the latest release.";
+"You are currently running the latest release." = "Bạn đang chạy phiên bản mới nhất rồi.";
 
 /* Alert button, disable the warning when skip-show-database is set to on */
-"Never show this again" = "Never show this again";
+"Never show this again" = "Đừng bao giờ cho tôi thấy cái này";
