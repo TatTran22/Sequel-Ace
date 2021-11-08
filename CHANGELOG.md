@@ -1,3 +1,67 @@
+## [3.4.2]
+
+### Added
+- 4b298830, #fixed Shortcut to show/hide toolbar.  Shortcut to duplicate connection in new tab.
+
+### Fixed
+- c7594584, Add new line only when adding to existing queries 
+- 5ba8e135, Make Preferences elements consistent #2 
+- 904f9240, Reload query history after new entries are added 
+- 72f4d43d, Favorite and placeholder display bug in query editor fixed 
+- 88fb0a7d, Make Preferences elements consistent 
+- f9fa6430, Fix crash when adding a row locally 
+- 0f03c3a6, Allow Updating in Joined Instances 
+- c44118ff, Remove redundant rawErrorText parameter 
+- 4b298830,  Shortcut to show/hide toolbar. #added Shortcut to duplicate connection in new tab.
+
+### Changed
+
+
+### Removed
+
+
+### Infra
+
+
+## [3.4.1]
+
+### Added
+
+
+### Fixed
+- a0ce9cc2, Fix stats counts not updating immediately for MySQL 8 
+- 865043fa, Fix issue with Check for Update Failing 
+- dd4d3093, Possible fix for issues with reconnecting 
+- c0470af9,  Resolved 'alter table' bug for generated column
+
+### Changed
+
+
+### Removed
+
+
+### Infra
+
+
+## [3.4.0]
+
+### Added
+
+
+### Fixed
+- 3dbc261f, Fix tabbing, titles and window order 
+- 304f4d62, Fixed buggy behavior when trying to edit a generated column 
+- a30214a9, Fix character counts for multi-byte strings 
+
+### Changed
+
+
+### Removed
+
+
+### Infra
+
+
 ## [3.3.3]
 
 ### Added

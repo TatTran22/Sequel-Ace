@@ -1828,24 +1828,34 @@ static void *TableContentKVOContext = &TableContentKVOContext;
 
 
 	BOOL queryWarningEnabled = [prefs boolForKey:SPQueryWarningEnabled];
-	BOOL queryWarningEnabledSuppressed = [prefs boolForKey:SPQueryWarningEnabledSuppressed];
+	BOOL queryDoubleCheckWarningEnabled = [prefs boolForKey:SPShowWarningBeforeDeleteQuery];
     BOOL isDeleteSomeRowsRequest = alertReturnCode == NSAlertFirstButtonReturn;
     BOOL isDeleteAllRowsRequest = allowDeletingAllRows && alertReturnCode == NSAlertSecondButtonReturn;
 
-    BOOL __block retCode = (isDeleteSomeRowsRequest || isDeleteAllRowsRequest);
+    BOOL retCode = (isDeleteSomeRowsRequest || isDeleteAllRowsRequest);
 
-	if (retCode == YES && queryWarningEnabled == YES && queryWarningEnabledSuppressed == NO) {
-        [NSAlert createDefaultAlertWithSuppressionWithTitle:[NSString stringWithFormat:NSLocalizedString(@"Double Check", @"Double Check")] message:@"Double checking as you have 'Show warning before executing a query' set in Preferences" suppressionKey:SPQueryWarningEnabledSuppressed primaryButtonTitle:NSLocalizedString(@"Proceed", @"Proceed") primaryButtonHandler:^{
-			SPLog(@"User clicked Yes, exec queries");
-			retCode = YES;
-		} cancelButtonHandler:^{
-			SPLog(@"Cancel pressed");
-			self->isEditingRow = NO;
-			self->currentlyEditingRow = -1;
-			// reload
-			[self loadTableValues];
-			retCode = NO;
-		}];
+	if (retCode == YES && queryWarningEnabled == YES && queryDoubleCheckWarningEnabled == YES) {
+        NSAlert *doubleCheckAlert = [[NSAlert alloc] init];
+        [doubleCheckAlert setMessageText:NSLocalizedString(@"Double Check", @"Double Check")];
+        [doubleCheckAlert setInformativeText:NSLocalizedString(@"Double checking as you have 'Show warning before executing a query' set in Preferences", @"Double check delete query")];
+        [doubleCheckAlert addButtonWithTitle:NSLocalizedString(@"Proceed", @"Proceed")];
+        [doubleCheckAlert addButtonWithTitle:NSLocalizedString(@"Cancel", @"Cancel")];
+        [doubleCheckAlert setShowsSuppressionButton: YES];
+
+        if ([doubleCheckAlert runModal] == NSAlertFirstButtonReturn) {
+            if ([[doubleCheckAlert suppressionButton] state] == NSOnState) {
+                [prefs setBool:NO forKey:SPShowWarningBeforeDeleteQuery];
+            }
+            SPLog(@"User clicked Yes, exec queries");
+            retCode = YES;
+        } else {
+            SPLog(@"Cancel pressed");
+            self->isEditingRow = NO;
+            self->currentlyEditingRow = -1;
+            // reload
+            [self loadTableValues];
+            retCode = NO;
+        }
 	}
 
 	if (retCode == NO) {
@@ -2580,9 +2590,11 @@ static void *TableContentKVOContext = &TableContentKVOContext;
             SPLog(@"fieldValue is nil: %@", fieldValue);
         }
 
-		// Store the key and value in the ordered arrays for saving.
-		[rowFieldsToSave safeAddObject:[fieldDefinition safeObjectForKey:@"name"]];
-		[rowValuesToSave safeAddObject:fieldValue];
+		// Store the key and value in the ordered arrays for saving (Except for generated columns).
+        if (![fieldDefinition objectForKey:@"generatedalways"]) {
+            [rowFieldsToSave safeAddObject:[fieldDefinition safeObjectForKey:@"name"]];
+            [rowValuesToSave safeAddObject:fieldValue];
+        }
 	}
 
 	[[NSNotificationCenter defaultCenter] postNotificationOnMainThreadWithName:@"SMySQLQueryWillBePerformed" object:tableDocumentInstance];
@@ -2595,21 +2607,24 @@ static void *TableContentKVOContext = &TableContentKVOContext;
 					   [selectedTable backtickQuotedString], [rowFieldsToSave componentsJoinedAndBacktickQuoted], [rowValuesToSave componentsJoinedByString:@", "]];
 
 	// Otherwise use an UPDATE syntax to save only the changed cells - if this point is reached,
-	// the equality test has failed and so there is always at least one changed cell
+	// the equality test has failed and so there is always at least one changed cell (Except in the case where the cell is of the "generated column" type, the number of cell changed can be 0)
 	} else {
-		queryString = [NSMutableString stringWithFormat:@"UPDATE %@ SET ", [selectedTable backtickQuotedString]];
-		for (i = 0; i < [rowFieldsToSave count]; i++) {
-			if (i) [queryString appendString:@", "];
-			[queryString appendFormat:@"%@ = %@",
-									   [[rowFieldsToSave safeObjectAtIndex:i] backtickQuotedString], [rowValuesToSave safeObjectAtIndex:i]];
-		}
-		NSString *whereArg = [self argumentForRow:-2];
-		if(![whereArg length]) {
-			SPLog(@"Did not find plausible WHERE condition for UPDATE.");
-			NSBeep();
-			return (NSMutableString*)@"";
-		}
-		[queryString appendFormat:@" WHERE %@", whereArg];
+        if ([rowFieldsToSave count] == 0) {
+            return [[NSMutableString alloc] initWithString:@""];
+        }
+        queryString = [NSMutableString stringWithFormat:@"UPDATE %@ SET ", [selectedTable backtickQuotedString]];
+        for (i = 0; i < [rowFieldsToSave count]; i++) {
+            if (i) [queryString appendString:@", "];
+            [queryString appendFormat:@"%@ = %@",
+                                       [[rowFieldsToSave safeObjectAtIndex:i] backtickQuotedString], [rowValuesToSave safeObjectAtIndex:i]];
+        }
+        NSString *whereArg = [self argumentForRow:-2];
+        if(![whereArg length]) {
+            SPLog(@"Did not find plausible WHERE condition for UPDATE.");
+            NSBeep();
+            return [[NSMutableString alloc] initWithString:@""];
+        }
+        [queryString appendFormat:@" WHERE %@", whereArg];
 	}
 	
 	SPLog(@"query: %@", queryString);
@@ -2672,6 +2687,7 @@ static void *TableContentKVOContext = &TableContentKVOContext;
 							 cancelButtonHandler:^{
 				SPLog(@"Cancel pressed");
 				self->isEditingRow = NO;
+                self->isSavingRow = NO;
 				self->currentlyEditingRow = -1;
 				// reload
 				[self loadTableValues];
@@ -2681,6 +2697,7 @@ static void *TableContentKVOContext = &TableContentKVOContext;
 		else{
 			SPLog(@"No query string");
 			isEditingRow = NO;
+            isSavingRow = NO;
 			currentlyEditingRow = -1;
 			// reload
 			[self loadTableValues];
@@ -2689,7 +2706,18 @@ static void *TableContentKVOContext = &TableContentKVOContext;
 	}
 	else{
 		SPLog(@"warning before query pref == NO, just execute");
-		returnCode = [self _saveRowToTableWithQuery:[self deriveQueryString]];
+        NSMutableString *queryString = [[NSMutableString alloc] initWithString:[self deriveQueryString]];
+        if (queryString.length > 0) {
+            returnCode = [self _saveRowToTableWithQuery:queryString];
+        } else {
+            SPLog(@"No query string");
+            isEditingRow = NO;
+            isSavingRow = NO;
+            currentlyEditingRow = -1;
+            // reload
+            [self loadTableValues];
+            returnCode = YES;
+        }
 	}
 	
 	SPLog(@"returnCode = %d", returnCode);
@@ -3112,7 +3140,7 @@ static void *TableContentKVOContext = &TableContentKVOContext;
 		}
 
 		[mySQLConnection queryString:
-			[NSString stringWithFormat:@"UPDATE %@.%@ SET %@.%@.%@ = %@ %@ LIMIT 1",
+			[NSString stringWithFormat:@"UPDATE %@.%@ SET %@.%@.%@ = %@ %@",
 				[[columnDefinition objectForKey:@"db"] backtickQuotedString], [tableForColumn backtickQuotedString],
 				[[columnDefinition objectForKey:@"db"] backtickQuotedString], [tableForColumn backtickQuotedString], [columnName backtickQuotedString], newObject, fieldIDQueryStr]];
 
@@ -3955,7 +3983,7 @@ static void *TableContentKVOContext = &TableContentKVOContext;
 
 	[self updateCountText];
 
-	NSArray *triggeredCommands = [SPBundleManager.sharedSPBundleManager bundleCommandsForTrigger:SPBundleTriggerActionTableRowChanged];
+	NSArray *triggeredCommands = [SPBundleManager.shared bundleCommandsForTrigger:SPBundleTriggerActionTableRowChanged];
 
 	for (NSString *cmdPath in triggeredCommands)
 	{
@@ -3987,7 +4015,7 @@ static void *TableContentKVOContext = &TableContentKVOContext;
 		if (!stopTrigger) {
 			id firstResponder = [[NSApp keyWindow] firstResponder];
 			if ([[data objectAtIndex:1] isEqualToString:SPBundleScopeGeneral]) {
-				[[SPBundleManager.sharedSPBundleManager onMainThread] executeBundleItemForApp:aMenuItem];
+				[[SPBundleManager.shared onMainThread] executeBundleItemForApp:aMenuItem];
 			}
 			else if ([[data objectAtIndex:1] isEqualToString:SPBundleScopeDataTable]) {
 				if ([[[firstResponder class] description] isEqualToString:@"SPCopyTable"]) {
@@ -4094,8 +4122,14 @@ static void *TableContentKVOContext = &TableContentKVOContext;
 			[tableContentView reloadData];
 		}
 
-		// Retrieve the column definition
-		NSDictionary *columnDefinition = [cqColumnDefinition objectAtIndex:[[tableColumn identifier] integerValue]];
+        // Field is not editable if it is a generated columun.
+        if (![tableContentView isColumnEditable:[[tableColumn identifier] integerValue]]) {
+            [NSAlert createWarningAlertWithTitle:NSLocalizedString(@"Error", @"error") message:[NSString stringWithFormat:NSLocalizedString(@"The current field \"%@\" is a generated column and therefore cannot be edited.", @"Info alert when editing a generated column"), [[tableColumn headerCell] stringValue]] callback:nil];
+            return NO;
+        }
+
+        // Retrieve the column definition
+        NSDictionary *columnDefinition = [cqColumnDefinition objectAtIndex:[[tableColumn identifier] integerValue]];
 
 		// Open the editing sheet if required
 		if ([tableContentView shouldUseFieldEditorForRow:rowIndex column:[[tableColumn identifier] integerValue] checkWithLock:NULL]) {

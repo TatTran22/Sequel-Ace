@@ -1,9 +1,9 @@
 //
-//  SPFilePreferencePane.m
-//  sequel-pro
+//  SPBundleManagerAdditions.swift
+//  Sequel Ace
 //
-//  Created by Stuart Connolly (stuconnolly.com) on October 31, 2010.
-//  Copyright (c) 2010 Stuart Connolly. All rights reserved.
+//  Created by Christopher Jensen-Reimann on 10/31/21.
+//  Copyright © 2021 Christopher Jensen-Reimann.
 //
 //  Permission is hereby granted, free of charge, to any person
 //  obtaining a copy of this software and associated documentation
@@ -26,31 +26,18 @@
 //  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 //  OTHER DEALINGS IN THE SOFTWARE.
 //
-//  More info at <https://github.com/sequelpro/sequelpro>
 
-#import "SPPreferencePane.h"
-#import "SPPanelOptions.h"
+import Foundation
 
-/**
- * @class SPNetworkPreferencePane SPNetworkPreferencePane.h
- *
- * File preference pane controller.
- */
-@interface SPFilePreferencePane : SPPreferencePane <SPPreferencePaneProtocol, NSTableViewDataSource, NSTableViewDelegate>
-{
-	IBOutlet NSTableView *fileView;
-	IBOutlet NSView *hiddenFileView;
-
-@private
-	NSOpenPanel *_currentFilePanel;
-    NSMutableArray<NSString *> *fileNames;
-
+public extension SPBundleManager {
+    @objc func loadBundle(at: String) throws -> Dictionary<String, Any> {
+        
+        let data = try Data(contentsOf: URL(fileURLWithPath: at), options: .uncached)
+        let loaded = try PropertyListSerialization.propertyList(from: data, options: [], format: nil)
+        guard let pList = loaded as? Dictionary<String, Any> else {
+            throw NSError(domain: "SPBundleManagerExtensions", code: 0, userInfo: nil)
+        }
+        return pList
+    }
 }
 
-@property (weak) IBOutlet NSTextField *staleLabel;
-@property (weak) IBOutlet NSButtonCell *revokeButton;
-
-- (IBAction)revokeBookmark:(id)sender;
-- (IBAction)addBookmark:(id)sender;
-- (IBAction)doubleClick:(id)sender;
-@end

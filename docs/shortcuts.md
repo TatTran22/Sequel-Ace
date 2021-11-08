@@ -18,9 +18,10 @@ Get the most out of Sequel Ace by remembering the following keyboard shortcuts.
 | `⌘ 1`             | Table Structure |
 | `⌘ 2`             | Table Content   |
 | `⌘ 3`             | Table Relations |
-| `⌘ 4`             | Table Info      |
-| `⌘ 5`             | Custom Query    |
-| `⌘ 6`             | Table Triggers  |
+| `⌘ 4`             | Table Triggers  |
+| `⌘ 5`             | Table Info      |
+| `⌘ 6`             | Custom Query    |
+
 
 #### General Shortcuts
 
@@ -28,6 +29,7 @@ Get the most out of Sequel Ace by remembering the following keyboard shortcuts.
 | :---------------- | :----------------------------------------- |
 | `⌘ N`             | New Window (Connection File)               |
 | `⌘ T`             | New Tab (Connection File)                  |
+| `⇧ ⌘ T`           | Duplicate Connection in New Tab            |
 | `⇧ ⌘ A`           | Add Connection To Favorites                |
 | `⌘ O`             | Open (Connection File or SQL File)         |
 | `⌥ ⌘ O`           | Open current Connection File in New Window |
@@ -57,7 +59,7 @@ Get the most out of Sequel Ace by remembering the following keyboard shortcuts.
 | `⌘ C`             | Copy selection / Copy selected row(s)      |
 | `⌥ ⌘ C`           | Copy selected row(s) with column names     |
 | `⌃ ⌥ ⌘ C`         | Copy selected row(s) as SQL INSERT         |
-| `⇧ ⌘ T`           | Show/Hide Toolbar                          |
+| `⌥ ⌘ T`           | Show/Hide Toolbar                          |
 | `⌃ ⌘ F`           | Filter Table Content                       |
 | `⌃ ⌥ ⌘ F`         | Filter Tables                              |
 | `⌃ ⌥ ⌘ B`         | Bundle Editor                              |

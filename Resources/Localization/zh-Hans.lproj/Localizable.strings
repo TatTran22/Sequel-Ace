@@ -1492,9 +1492,6 @@
  export header host label */
 "Host" = "主机";
 
-/* Localized help page for query favourites - do not localize if no translated webpage is available */
-"http://www.sequelpro.com/docs/Working_with_Query_Favorites" = "http://www.sequelpro.com/docs/Working_with_Query_Favorites";
-
 /* description of double */
 "IEEE 754 double-precision floating-point value. M is the maxium number of digits, of which D may be after the decimal point. Note: Many decimal numbers can only be approximated by floating-point values. See DECIMAL if you require exact results." = "IEEE 754确定的双精度浮点值，其中M为最大位数，并可以包含小数点后的D。注意：许多十进制数会因浮点值丧失精度，若需要确切值请参考DECIMAL类型。";
 
@@ -2185,16 +2182,16 @@
 "Requires 8 bytes storage space. M is the optional display width and does not affect the possible value range. Note: Arithmetic operations might fail for large numbers." = "需要8字节存储空间。M是可选的显示宽度，不影响表示值的范围。注意，对较大的数的代数运算可能发生错误。";
 
 /* reset auto_increment after deletion of all rows message */
-"Reset AUTO_INCREMENT after deletion\n(only for Delete ALL ROWS IN TABLE)?" = "Reset AUTO_INCREMENT after deletion\n(only for Delete ALL ROWS IN TABLE)?";
+"Reset AUTO_INCREMENT after deletion\n(only for Delete ALL ROWS IN TABLE)?" = "删除后重置AUTO_INCREMENT\n（仅用于删除表中的所有行）？";
 
 /* delete selected row button */
-"Delete Selected Row" = "Delete Selected Row";
+"Delete Selected Row" = "删除选中的行";
 
 /* delete selected rows button */
-"Delete Selected Rows" = "Delete Selected Rows";
+"Delete Selected Rows" = "删除选中的行";
 
 /* delete all rows in table button */
-"Delete ALL ROWS IN TABLE" = "Delete ALL ROWS IN TABLE";
+"Delete ALL ROWS IN TABLE" = "删除表中的所有行";
 
 /* Restoring session task description */
 "Restoring session..." = "正在恢复会话...";
@@ -2329,7 +2326,7 @@
 "Sequel Ace could not find any columns belonging to this index. Maybe it has been removed already?" = "Sequel Ace找不到该索引对应的任何栏。请检查索引是否存在。";
 
 /* Preferences : Network : Custom SSH client : warning dialog message */
-"Sequel Ace only supports and is tested with the default OpenSSH client versions included with Mac OS X. Using different clients might cause connection issues, security risks or not work at all.\n\nPlease be aware, that we cannot provide support for such configurations." = "Sequel Ace只在Mac OS X附带的OpenSSH客户端版本中测试有效并保证支持。使用其他客户端可能会导致连接问题、安全问题或根本无法工作。\n\n请注意我们无法为此类配置提供技术支持。";
+"Sequel Ace only supports and is tested with the default OpenSSH client versions included with macOS. Using different clients might cause connection issues, security risks or not work at all.\n\nPlease be aware, that we cannot provide support for such configurations." = "Sequel Ace只在macOS附带的OpenSSH客户端版本中测试有效并保证支持。使用其他客户端可能会导致连接问题、安全问题或根本无法工作。\n\n请注意我们无法为此类配置提供技术支持。";
 
 /* sequelace URL scheme command not supported. */
 "sequelace URL scheme command not supported." = "不支持Sequal Ace的URL SCHEME指令。";
@@ -3295,7 +3292,7 @@
 "\n\ntime_zone will be set to SYSTEM." = "\n\n时区将被设置为系统所在时区";
 
 /* Menu item title for checking for updates */
-"Check for Updates..." = "Check for Updates...";
+"Check for Updates..." = "检查更新...";
 
 /* Warning message during connection in case the variable skip-show-database is set to ON */
 "The skip-show-database variable of the database server is set to ON. Thus, you won't be able to list databases unless you have the SHOW DATABASES privilege.\n\nHowever, the databases are still accessible directly through SQL queries depending on your privileges." = "数据库服务器的 skip-show-data 变量已设置为 ON。 因此，除非您拥有 SHOW DATABASES 权限，否则您将无法列出数据库。\n\n然而，数据库仍然可以直接通过 SQL 查询访问，这取决于您的权限。";
@@ -3310,4 +3307,7 @@
 "You are currently running the latest release." = "你当前运行的已经是最新版本";
 
 /* Alert button, disable the warning when skip-show-database is set to on */
-"Never show this again" = "Never show this again";
+"Never show this again" = "不再显示";
+
+/* Info alert when editing a generated column */
+"The current field \"%@\" is a generated column and therefore cannot be edited." = "The current field \"%@\" is a generated column and therefore cannot be edited.";

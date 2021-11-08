@@ -350,15 +350,14 @@ typedef void (^QueryProgressHandler)(QueryProgress *);
         if(replaceContent) {
             SPLog(@"replaceContent == YES");
             [textView.textStorage setAttributedString:[[NSAttributedString alloc] initWithString:@""]];
-            [textView insertAsSnippet:selectedFaveQueryStr atRange:NSMakeRange(0, selectedFaveQueryStr.length)];
-            [textView setSelectedRange:NSMakeRange(0,[[textView string] length])];
+            [textView insertAsSnippet:selectedFaveQueryStr atRange:NSMakeRange(0, 0)];
         }
         else{
             SPLog(@"replaceContent == NO");
-            NSUInteger startStringLen = [[textView string] length];
-            [selectedFaveQueryStr insertString:@"\n" atIndex:0];
-            [textView insertAsSnippet:selectedFaveQueryStr atRange:NSMakeRange(startStringLen, selectedFaveQueryStr.length)];
-            [textView setSelectedRange:NSMakeRange(startStringLen+1, selectedFaveQueryStr.length)];
+            if ([[textView.textStorage string] length] > 0) {
+                [selectedFaveQueryStr insertString:@"\n" atIndex:0];
+            }
+            [textView insertAsSnippet:selectedFaveQueryStr atRange:[textView selectedRange]];
         }
     }
 }
@@ -383,15 +382,14 @@ typedef void (^QueryProgressHandler)(QueryProgress *);
         if(replaceContent){
             SPLog(@"replaceContent == YES");
             [textView.textStorage setAttributedString:[[NSAttributedString alloc] initWithString:@""]];
-            [textView insertAsSnippet:selectedHistoryQueryStr atRange:NSMakeRange(0, selectedHistoryQueryStr.length)];
-            [textView setSelectedRange:NSMakeRange(0,[[textView string] length])];
+            [textView insertAsSnippet:selectedHistoryQueryStr atRange:NSMakeRange(0, 0)];
         }
         else{
             SPLog(@"replaceContent == NO");
-            NSUInteger startStringLen = [[textView string] length];
-            [selectedHistoryQueryStr insertString:@"\n" atIndex:0];
-            [textView insertAsSnippet:selectedHistoryQueryStr atRange:NSMakeRange(startStringLen, selectedHistoryQueryStr.length)];
-            [textView setSelectedRange:NSMakeRange(startStringLen+1, selectedHistoryQueryStr.length)];
+            if ([[textView.textStorage string] length] > 0) {
+                [selectedHistoryQueryStr insertString:@"\n" atIndex:0];
+            }
+            [textView insertAsSnippet:selectedHistoryQueryStr atRange:[textView selectedRange]];
         }
 
     }
@@ -2129,7 +2127,7 @@ typedef void (^QueryProgressHandler)(QueryProgress *);
             }
         }
 
-        NSString *queryStr = [NSString stringWithFormat:@"UPDATE %@.%@ SET %@.%@.%@ = %@ %@ LIMIT 1",
+        NSString *queryStr = [NSString stringWithFormat:@"UPDATE %@.%@ SET %@.%@.%@ = %@ %@",
                               [[columnDefinition objectForKey:@"db"] backtickQuotedString], [[columnDefinition objectForKey:@"org_table"] backtickQuotedString],
                               [[columnDefinition objectForKey:@"db"] backtickQuotedString], [[columnDefinition objectForKey:@"org_table"] backtickQuotedString], [columnName backtickQuotedString], newObject, fieldIDQueryString];
 
@@ -2728,7 +2726,7 @@ typedef void (^QueryProgressHandler)(QueryProgress *);
     // Check our notification object is our table content view
     if ([aNotification object] != customQueryView) return;
     
-    NSArray *triggeredCommands = [SPBundleManager.sharedSPBundleManager bundleCommandsForTrigger:SPBundleTriggerActionTableRowChanged];
+    NSArray *triggeredCommands = [SPBundleManager.shared bundleCommandsForTrigger:SPBundleTriggerActionTableRowChanged];
     for(NSString* cmdPath in triggeredCommands) {
         NSArray *data = [cmdPath componentsSeparatedByString:@"|"];
         NSMenuItem *aMenuItem = [[NSMenuItem alloc] init];
@@ -2753,7 +2751,7 @@ typedef void (^QueryProgressHandler)(QueryProgress *);
         if(!stopTrigger) {
             id firstResponder = [[NSApp keyWindow] firstResponder];
             if([[data objectAtIndex:1] isEqualToString:SPBundleScopeGeneral]) {
-                [SPBundleManager.sharedSPBundleManager executeBundleItemForApp:aMenuItem];
+                [SPBundleManager.shared executeBundleItemForApp:aMenuItem];
             }
             else if([[data objectAtIndex:1] isEqualToString:SPBundleScopeDataTable]) {
                 if([[[firstResponder class] description] isEqualToString:@"SPCopyTable"])
