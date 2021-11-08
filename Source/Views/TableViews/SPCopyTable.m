@@ -941,7 +941,7 @@ static const NSInteger kBlobAsImageFile = 4;
 
 	if(![[self delegate] isKindOfClass:[SPCustomQuery class]] && ![[self delegate] isKindOfClass:[SPTableContent class]]) return menu;
 
-	[SPBundleManager.sharedSPBundleManager reloadBundles:self];
+	[SPBundleManager.shared reloadBundles:self];
 
 	// Remove 'Bundles' sub menu and separator
 	NSMenuItem *bItem = [menu itemWithTag:10000000];
@@ -951,8 +951,8 @@ static const NSInteger kBlobAsImageFile = 4;
 		[menu removeItem:bItem];
 	}
 
-	NSArray *bundleCategories = [SPBundleManager.sharedSPBundleManager bundleCategoriesForScope:SPBundleScopeDataTable];
-	NSArray *bundleItems = [SPBundleManager.sharedSPBundleManager bundleItemsForScope:SPBundleScopeDataTable];
+	NSArray *bundleCategories = [SPBundleManager.shared bundleCategoriesForScope:SPBundleScopeDataTable];
+	NSArray *bundleItems = [SPBundleManager.shared bundleItemsForScope:SPBundleScopeDataTable];
 
 	// Add 'Bundles' sub menu
 	if(bundleItems && [bundleItems count]) {
@@ -1314,6 +1314,25 @@ static const NSInteger kBlobAsImageFile = 4;
 	return NO;
 }
 
+/**
+ * Determine whether the column can be editable or not.
+ */
+- (BOOL)isColumnEditable:(NSUInteger)colIndex
+{
+    // Retrieve the column definition
+    NSDictionary *columnDefinition = [[(id <SPDatabaseContentViewDelegate>)[self delegate] dataColumnDefinitions] objectAtIndex:colIndex];
+
+    // Generated column is not editable
+    NSString *generatedalways = [columnDefinition objectForKey:@"generatedalways"];
+    if (generatedalways) {
+        SPLog(@"got a generated column");
+        return NO;
+    }
+
+    // Otherwise, it's editable
+    return YES;
+}
+
 #pragma mark -
 #pragma mark Bundle Command Support
 
@@ -1321,7 +1340,7 @@ static const NSInteger kBlobAsImageFile = 4;
 {
 	NSInteger idx = [(NSMenuItem*)sender tag] - 1000000;
 	NSString *infoPath = nil;
-	NSArray *bundleItems = [SPBundleManager.sharedSPBundleManager bundleItemsForScope:SPBundleScopeDataTable];
+	NSArray *bundleItems = [SPBundleManager.shared bundleItemsForScope:SPBundleScopeDataTable];
 	if(idx >=0 && idx < (NSInteger)[bundleItems count]) {
 		infoPath = [[bundleItems objectAtIndex:idx] objectForKey:SPBundleInternPathToFileKey];
 	} else {
@@ -1335,25 +1354,13 @@ static const NSInteger kBlobAsImageFile = 4;
 		return;
 	}
 
-	NSDictionary *cmdData = nil;
-	{
-		NSError *error = nil;
-		
-		NSData *pData = [NSData dataWithContentsOfFile:infoPath options:NSUncachedRead error:&error];
-
-		if(pData && !error) {
-			cmdData = [NSPropertyListSerialization propertyListWithData:pData
-																 options:NSPropertyListImmutable
-																  format:NULL
-																   error:&error];
-		}
-		
-		if(!cmdData || error) {
-			NSLog(@"“%@” file couldn't be read. (error=%@)", infoPath, error);
-			NSBeep();
-			return;
-		}
-	}
+    NSError *loadErr;
+    NSDictionary *cmdData = [SPBundleManager.shared loadBundleAt:infoPath error:&loadErr];
+    if(!cmdData || loadErr) {
+        NSLog(@"“%@” file couldn't be read. (error=%@)", infoPath, loadErr.localizedDescription);
+        NSBeep();
+        return;
+    }
 
 	if([cmdData objectForKey:SPBundleFileCommandKey] && [(NSString *)[cmdData objectForKey:SPBundleFileCommandKey] length]) {
 
@@ -1581,7 +1588,7 @@ static const NSInteger kBlobAsImageFile = 4;
 						SPBundleHTMLOutputController *bundleController = [[SPBundleHTMLOutputController alloc] init];
 						[bundleController setWindowUUID:[cmdData objectForKey:SPBundleFileUUIDKey]];
 						[bundleController displayHTMLContent:output withOptions:nil];
-						[SPBundleManager.sharedSPBundleManager addHTMLOutputController:bundleController];
+						[SPBundleManager.shared addHTMLOutputController:bundleController];
 					}
 				}
 			}
